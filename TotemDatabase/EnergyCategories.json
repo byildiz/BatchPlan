@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ENC1",
+    "fixedEnergySource_id": null,
+    "fixedEnergySource_name": "",
+    "isEnergyGeneration": false,
+    "name": {
+      "en": "Heating",
+      "fr": "Chauffage",
+      "nl": "Verwarming",
+      "de": ""
+    },
+    "orderVisualisation": 1.0
+  },
+  {
+    "id": "ENC2",
+    "fixedEnergySource_id": 2.0,
+    "fixedEnergySource_name": "Electricity",
+    "isEnergyGeneration": false,
+    "name": {
+      "en": "Cooling",
+      "fr": "Refroidissement",
+      "nl": "Koeling",
+      "de": ""
+    },
+    "orderVisualisation": 2.0
+  },
+  {
+    "id": "ENC3",
+    "fixedEnergySource_id": null,
+    "fixedEnergySource_name": "",
+    "isEnergyGeneration": false,
+    "name": {
+      "en": "Domestic hot water",
+      "fr": "Eau chaude sanitaire",
+      "nl": "Sanitair warm water",
+      "de": ""
+    },
+    "orderVisualisation": 3.0
+  },
+  {
+    "id": "ENC4",
+    "fixedEnergySource_id": null,
+    "fixedEnergySource_name": "",
+    "isEnergyGeneration": false,
+    "name": {
+      "en": "Auxiliaries",
+      "fr": "Auxiliaires",
+      "nl": "Hulpenergie",
+      "de": ""
+    },
+    "orderVisualisation": 4.0
+  }
+]

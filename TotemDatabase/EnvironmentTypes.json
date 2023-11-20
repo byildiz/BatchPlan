@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ENT0",
+    "bFactor": "not applicable",
+    "includeInEnergyCalculation": false,
+    "name": {
+      "en": "Not part of building thermal envelope",
+      "fr": "Non inclus dans l'enveloppe thermique du b\u00e2timent",
+      "nl": "Geen onderdeel van de thermische gebouwschil",
+      "de": ""
+    },
+    "orderVisualisation": 0.0
+  },
+  {
+    "id": "ENT1",
+    "bFactor": "1.0",
+    "includeInEnergyCalculation": true,
+    "name": {
+      "en": "Outdoor environment",
+      "fr": "Environnement ext\u00e9rieur",
+      "nl": "Buitenomgeving",
+      "de": ""
+    },
+    "orderVisualisation": 1.0
+  },
+  {
+    "id": "ENT2",
+    "bFactor": "not applicable",
+    "includeInEnergyCalculation": false,
+    "name": {
+      "en": "Adjacent heated space",
+      "fr": "Espace adjacent chauff\u00e9",
+      "nl": "Aangrenzend verwarmde ruimte",
+      "de": ""
+    },
+    "orderVisualisation": 2.0
+  },
+  {
+    "id": "ENT3",
+    "bFactor": "1.0",
+    "includeInEnergyCalculation": true,
+    "name": {
+      "en": "Adjacent non-heated space",
+      "fr": "Espace adjacent non chauff\u00e9",
+      "nl": "Aangrenzend onverwarmde ruimte",
+      "de": ""
+    },
+    "orderVisualisation": 3.0
+  },
+  {
+    "id": "ENT4",
+    "bFactor": "1/(1+U)",
+    "includeInEnergyCalculation": true,
+    "name": {
+      "en": "Ground",
+      "fr": "Sol",
+      "nl": "Grond",
+      "de": ""
+    },
+    "orderVisualisation": 4.0
+  },
+  {
+    "id": "ENT5",
+    "bFactor": "0.67",
+    "includeInEnergyCalculation": true,
+    "name": {
+      "en": "Cellar",
+      "fr": "Cave",
+      "nl": "Kelder",
+      "de": ""
+    },
+    "orderVisualisation": 5.0
+  },
+  {
+    "id": "ENT6",
+    "bFactor": "1.0",
+    "includeInEnergyCalculation": true,
+    "name": {
+      "en": "Crawl space",
+      "fr": "Vide sanitaire",
+      "nl": "Kruipruimte",
+      "de": ""
+    },
+    "orderVisualisation": 6.0
+  }
+]

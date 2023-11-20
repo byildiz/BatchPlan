@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "1",
+    "enginetag": "growthRate",
+    "names": {
+      "en": "Growth rate: non-energy processes",
+      "fr": "Taux de croissance: processus non \u00e9nerg\u00e9tiques",
+      "nl": "Groeivoet: niet-energieprocessen",
+      "de": "Wachstumsrate: Nicht-Energie-Prozesse"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "2",
+    "enginetag": "growthRateEnergy",
+    "names": {
+      "en": "Growth rate: operational energy use (module B6)",
+      "fr": "Taux de croissance: utilisation de l'\u00e9nergie (module B6)",
+      "nl": "Groeivoet: operationeel energieverbruik (module B6)",
+      "de": "Wachstumsrate: Betrieblicher Energieeinsatz (Modul B6)"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "3",
+    "enginetag": "discountRate",
+    "names": {
+      "en": "Discount rate",
+      "fr": "taux d'escompte",
+      "nl": "Discontovoet",
+      "de": "Diskontsatz"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "4",
+    "enginetag": "numberDegreeDays",
+    "names": {
+      "en": "number of equivalent degree days",
+      "fr": "nombre de degr\u00e9s-jours \u00e9quivalents",
+      "nl": "aantal equivalente graaddagen",
+      "de": "Anzahl der \u00e4quivalenten Grad Tage"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "5",
+    "enginetag": "efficiencyInstallation",
+    "names": {
+      "en": "efficiency installation",
+      "fr": "efficacit\u00e9 de l'installation ",
+      "nl": "rendement van de installatie",
+      "de": "Effizienz Installation"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "6",
+    "enginetag": "lifeTimeBuildingDefault",
+    "names": {
+      "en": "Life span",
+      "fr": "Dur\u00e9e de vie",
+      "nl": "Levensduur",
+      "de": "Lebensdauer"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "7",
+    "enginetag": "transmissionUpInner",
+    "names": {
+      "en": "Heat transmission resistance upwards on inner surface",
+      "fr": "R\u00e9sistance thermique verticale montante pour surface int\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "8",
+    "enginetag": "transmissionHorizontalInner",
+    "names": {
+      "en": "Heat transmission resistance horizontal on inner surface",
+      "fr": "R\u00e9sistance thermique horizontale pour surface int\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "9",
+    "enginetag": "transmissionDownInner",
+    "names": {
+      "en": "Heat transmission resistance downwards on inner surface",
+      "fr": "R\u00e9sistance thermique verticale descendante pour surface int\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "10",
+    "enginetag": "transmissionUpOuter",
+    "names": {
+      "en": "Heat transmission resistance upwards on outer surface",
+      "fr": "R\u00e9sistance thermique verticale montante pour surface ext\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "11",
+    "enginetag": "transmissionHorizontalOuter",
+    "names": {
+      "en": "Heat transmission resistance horizontal on outer surface",
+      "fr": "R\u00e9sistance thermique horizontale pour surface int\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "12",
+    "enginetag": "transmissionDownOuter",
+    "names": {
+      "en": "Heat transmission resistance downwards on outer surface",
+      "fr": "R\u00e9sistance thermique verticale descendante pour surface int\u00e9rieure",
+      "nl": "not available",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "13",
+    "enginetag": "referenceStudyPeriod",
+    "names": {
+      "en": "Reference study period building",
+      "fr": "P\u00e9riode d'\u00e9tude de r\u00e9f\u00e9rence du b\u00e2timent",
+      "nl": "Referentie studieperiode gebouw",
+      "de": "Referenzstudienzeit Geb\u00e4ude"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "14",
+    "enginetag": "constructionYearOriginal",
+    "names": {
+      "en": "In case of renovation: original construction year",
+      "fr": "En cas de r\u00e9novation: ann\u00e9e de construction d'origine",
+      "nl": "Indien renovatie: oorspronkelijk bouwjaar",
+      "de": "Bei Renovierung: urspr\u00fcngliche Baujahr"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "15",
+    "enginetag": "renovationYear",
+    "names": {
+      "en": "In case of renovation: renovation year",
+      "fr": "En cas de r\u00e9novation: ann\u00e9e de r\u00e9novation",
+      "nl": "Indien renovatie: renovatiejaar",
+      "de": "Bei Renovierung: Renovierungsjahr"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "16",
+    "enginetag": "lifeTime",
+    "names": {
+      "en": "Life time",
+      "fr": "Dur\u00e9e de vie",
+      "nl": "Levensduur",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "17",
+    "enginetag": "unit",
+    "names": {
+      "en": "Unit",
+      "fr": "Unit\u00e9",
+      "nl": "Unit",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "18",
+    "enginetag": "thermalConductance",
+    "names": {
+      "en": "Thermal conductivity",
+      "fr": "Conductivit\u00e9 thermique",
+      "nl": "Thermische geleidbaarheid",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "19",
+    "enginetag": "ratio",
+    "names": {
+      "en": "Ratio",
+      "fr": "Ratio",
+      "nl": "Ratio",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "20",
+    "enginetag": "worksectionThickness",
+    "names": {
+      "en": "Thickness",
+      "fr": "Epaisseur",
+      "nl": "Dikte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "21",
+    "enginetag": "unitType",
+    "names": {
+      "en": "Unit type",
+      "fr": "Type d'unit\u00e9 de b\u00e2timent",
+      "nl": "Bouweenheid type",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "22",
+    "enginetag": "worksectionType",
+    "names": {
+      "en": "Worksection type",
+      "fr": "Type de mat\u00e9riau mis en \u0153uvre",
+      "nl": "Verwerkt materiaal type",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "23",
+    "enginetag": "thicknessAdapatable",
+    "names": {
+      "en": "Thickness adaptable",
+      "fr": "Epaisseur adaptable",
+      "nl": "Aanpasbaarheid dikte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "24",
+    "enginetag": "thermalConductanceAdaptable",
+    "names": {
+      "en": "Thermal conductance adaptable",
+      "fr": "Conductivit\u00e9 thermique adaptable",
+      "nl": "Aanpasbaarheid thermische geleidbaarheid",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "25",
+    "enginetag": "thermalResistance",
+    "names": {
+      "en": "Thermal resistance",
+      "fr": "R\u00e9sistance thermique",
+      "nl": "Thermische weerstand",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "26",
+    "enginetag": "protocolThermalResistance",
+    "names": {
+      "en": "Protocol thermal resistance",
+      "fr": "Protocole de r\u00e9sistance thermique",
+      "nl": "Protocol thermische weestand",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "27",
+    "enginetag": "mandatoryType",
+    "names": {
+      "en": "Maintenance mandatory type",
+      "fr": "Type de maintenance obligatoire ou fonctionnelle",
+      "nl": "Onderhoud functioneel type",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "28",
+    "enginetag": "fractionHeterogeneous",
+    "names": {
+      "en": "Fraction heterogeneous",
+      "fr": "Fraction h\u00e9t\u00e9rog\u00e8ne",
+      "nl": "Oppervlakte gewicht",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "29",
+    "enginetag": "energyEfficiency",
+    "names": {
+      "en": "Energy efficiency",
+      "fr": "efficacit\u00e9 \u00e9nerg\u00e9tique",
+      "nl": "Energie efficientie",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "30",
+    "enginetag": "conversionFactor",
+    "names": {
+      "en": "Conversion factor",
+      "fr": "Facteur de conversion",
+      "nl": "Conversie factor",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "31",
+    "enginetag": "roofSlope",
+    "names": {
+      "en": "Roof slope",
+      "fr": "Pente de toit",
+      "nl": "Dakhelling",
+      "de": "not available"
+    },
+    "units": {
+      "en": "degrees",
+      "fr": "degr\u00e9s",
+      "nl": "graden",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "32",
+    "enginetag": "lifeTimeBuilding",
+    "names": {
+      "en": "Life time building",
+      "fr": "Dur\u00e9e de vie b\u00e2timent",
+      "nl": "Levensduur gebouw",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "33",
+    "enginetag": "lifeTimeElement",
+    "names": {
+      "en": "Life time element",
+      "fr": "Dur\u00e9e de vie \u00e9l\u00e9ment",
+      "nl": "Levensduur element",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "34",
+    "enginetag": "lifeTimeReplacement",
+    "names": {
+      "en": "Life time replacement",
+      "fr": "Dur\u00e9e de vie mat\u00e9riau mis en oeuvre",
+      "nl": "Levensduur verwerkt materiaal",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "35",
+    "enginetag": "lifeTimeBigMaintenance",
+    "names": {
+      "en": "Life time big maintenance",
+      "fr": "Fr\u00e9quence grande maintenance",
+      "nl": "Levensduur groot onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "36",
+    "enginetag": "lifeTimeSmallMaintenance",
+    "names": {
+      "en": "Life time small maintenance",
+      "fr": "Fr\u00e9quence petite maintenance",
+      "nl": "Levensduur klein onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "37",
+    "enginetag": "lifeTimeCleaning",
+    "names": {
+      "en": "Life time cleaning",
+      "fr": "Fr\u00e9quence nettoyage",
+      "nl": "Levensduur cleaning",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "38",
+    "enginetag": "overlapTimeBuilding",
+    "names": {
+      "en": "Overlap time building",
+      "fr": "Temps de recouvrement b\u00e2timent",
+      "nl": "Sperperiode gebouw",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "39",
+    "enginetag": "overlapTimeElement",
+    "names": {
+      "en": "Overlap time element",
+      "fr": "Temps de recouvrement \u00e9l\u00e9ment",
+      "nl": "Sperperiode element",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "40",
+    "enginetag": "overlapTimeReplacement",
+    "names": {
+      "en": "Overlap time replacement",
+      "fr": "Temps de recouvrement remplacement",
+      "nl": "Sperperiode verwerkt materiaal",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "41",
+    "enginetag": "overlapTimeBigMaintenance",
+    "names": {
+      "en": "Overlap time big maintenance",
+      "fr": "Temps de recouvrement grande maintenance",
+      "nl": "Sperperiode groot onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "42",
+    "enginetag": "overlapTimeSmallMaintenance",
+    "names": {
+      "en": "Overlap time small maintenance",
+      "fr": "Temps de recouvrement petite maintenance",
+      "nl": "Sperperiode klein onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "43",
+    "enginetag": "overlapTimeCleaning",
+    "names": {
+      "en": "Overlap time cleaning",
+      "fr": "Temps de recouvrement nettoyage",
+      "nl": "Sperperiode cleaning",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "44",
+    "enginetag": "ageBuilding",
+    "names": {
+      "en": "Age building",
+      "fr": "Age b\u00e2timent",
+      "nl": "Huidige leeftijd gebouw",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "45",
+    "enginetag": "ageElement",
+    "names": {
+      "en": "Age element",
+      "fr": "Age \u00e9l\u00e9ment",
+      "nl": "Huidige leeftijd element",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "46",
+    "enginetag": "ageReplacement",
+    "names": {
+      "en": "Age replacement",
+      "fr": "not available",
+      "nl": "Huidige leeftijd verwerkt materiaal",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "47",
+    "enginetag": "ageBigMaintenance",
+    "names": {
+      "en": "Age big maintenance",
+      "fr": "not available",
+      "nl": "Huidige leeftijd groot onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "48",
+    "enginetag": "ageSmallMaintenance",
+    "names": {
+      "en": "Age small maintenance",
+      "fr": "not available",
+      "nl": "Huidige leeftijd klein onderhoud",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "49",
+    "enginetag": "ageCleaning",
+    "names": {
+      "en": "Age cleaning",
+      "fr": "not available",
+      "nl": "Huidige leeftijd cleaning",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "50",
+    "enginetag": "inElementThickness",
+    "names": {
+      "en": "In element thickness",
+      "fr": "not available",
+      "nl": "In element dikte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "51",
+    "enginetag": "inElementRatio",
+    "names": {
+      "en": "In element ratio",
+      "fr": "not available",
+      "nl": "In element ratio",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "52",
+    "enginetag": "surfaceWeightDeprecated",
+    "names": {
+      "en": "Surface weight",
+      "fr": "Rapport surface poids",
+      "nl": "Oppervlakte gewicht",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "53",
+    "enginetag": "layerType",
+    "names": {
+      "en": "Layer type",
+      "fr": "Type de couche",
+      "nl": "Laag type",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "54",
+    "enginetag": "areaDistrict",
+    "names": {
+      "en": "Area district",
+      "fr": "Surface quartier",
+      "nl": "Oppervlakte district",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m\u00b2",
+      "fr": "m\u00b2",
+      "nl": "m\u00b2",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "55",
+    "enginetag": "urbanisationDistrict",
+    "names": {
+      "en": "Urbanisation district",
+      "fr": "not available",
+      "nl": "Urbanisatie district",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "56",
+    "enginetag": "lifeTimeBuildingUser",
+    "names": {
+      "en": "Life time building user",
+      "fr": "Dur\u00e9e de vie b\u00e2timent utilisateur",
+      "nl": "Levensduur gebouw van gebruiker",
+      "de": "not available"
+    },
+    "units": {
+      "en": "years",
+      "fr": "ans",
+      "nl": "jaren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "57",
+    "enginetag": "heatingChoice",
+    "names": {
+      "en": "Heating choice",
+      "fr": "Choix de la source d'\u00e9nergie pour le chauffage",
+      "nl": "Keuze verwarmingsbron",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "58",
+    "enginetag": "energyUsageUser",
+    "names": {
+      "en": "Energy usage user",
+      "fr": "Utilisation d'\u00e9nergie utilisateur",
+      "nl": "Energie verbruik door gebruiker",
+      "de": "not available"
+    },
+    "units": {
+      "en": "MJ/year",
+      "fr": "MJ/an",
+      "nl": "MJ/jaar",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "59",
+    "enginetag": "energyComputationScheme",
+    "names": {
+      "en": "Energy computation scheme",
+      "fr": "Sch\u00e9ma de calcul \u00e9nerg\u00e9tique",
+      "nl": "Energie rekenschema",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "60",
+    "enginetag": "areaElement",
+    "names": {
+      "en": "Area element",
+      "fr": "Surface \u00e9l\u00e9ment",
+      "nl": "Oppervlakte element",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m\u00b2",
+      "fr": "m\u00b2",
+      "nl": "m\u00b2",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "61",
+    "enginetag": "numberElementsUser",
+    "names": {
+      "en": "Number of elements",
+      "fr": "Nombre d'\u00e9l\u00e9ment",
+      "nl": "Aantal elementen",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "62",
+    "enginetag": "thicknessUser",
+    "names": {
+      "en": "Thickness user",
+      "fr": "Epaisseur introduite utilisateur",
+      "nl": "Dikte ingegeven door gebruiker",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "63",
+    "enginetag": "thermalConductanceUser",
+    "names": {
+      "en": "Thermal conductance user",
+      "fr": "Conductivit\u00e9 thermique utilisateur",
+      "nl": "Thermische geleidbaarheid gebruiker",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "64",
+    "enginetag": "newLayerFlag",
+    "names": {
+      "en": "New layer flag",
+      "fr": "Flag nouvelle couche",
+      "nl": "Nieuwe laag flag",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "65",
+    "enginetag": "newSublayerFlag",
+    "names": {
+      "en": "New sublayer flag",
+      "fr": "Flag nouvelle sous-couche",
+      "nl": "Nieuwe sublaag flag",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "66",
+    "enginetag": "orderId",
+    "names": {
+      "en": "Order layer",
+      "fr": "Ordre des couches",
+      "nl": "Positie element laag",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "67",
+    "enginetag": "typeLayer",
+    "names": {
+      "en": "Type layer",
+      "fr": "Type de couche",
+      "nl": "Type laag in element",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "68",
+    "enginetag": "fractionHeterogeneousUser",
+    "names": {
+      "en": "Fraction heterogeneous user",
+      "fr": "Fraction h\u00e9t\u00e9rog\u00e8ne utilisateur",
+      "nl": "Oppervlakte gewicht door gebruiker",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "69",
+    "enginetag": "depthBulkProcess",
+    "names": {
+      "en": "Depth bulk process",
+      "fr": "Proc\u00e9d\u00e9 en volume",
+      "nl": "Diepte bulk processing",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "70",
+    "enginetag": "depthBulkWorksection",
+    "names": {
+      "en": "Depth bulk worksection",
+      "fr": "Mat\u00e9riau en volume",
+      "nl": "Diepte bulk materiaal",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "71",
+    "enginetag": "profileLength",
+    "names": {
+      "en": "Profile length",
+      "fr": "Longueur du profil",
+      "nl": "Profiel lengte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "72",
+    "enginetag": "worksectionRatio",
+    "names": {
+      "en": "Worksection ratio",
+      "fr": "Pourcentage du mat\u00e9riau",
+      "nl": "Worksection ratio",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "73",
+    "enginetag": "lengthPerArea",
+    "names": {
+      "en": "Profile length/surface area",
+      "fr": "Longueur du profil/surface",
+      "nl": "Profiel lengte/element oppervlakte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "74",
+    "enginetag": "unitsPerArea",
+    "names": {
+      "en": "Number pieces/surface area",
+      "fr": "Nombre de pi\u00e8ce/surface",
+      "nl": "Aantal stuks/oppervlakte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "units/m\u00b2",
+      "fr": "unit\u00e9s/m\u00b2",
+      "nl": "eenheden/m\u00b2",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "75",
+    "enginetag": "unitsPerUnit",
+    "names": {
+      "en": "Number pieces/piece",
+      "fr": "Nombre de pi\u00e8ce/pi\u00e8ce",
+      "nl": "Aantal stuks/stuk",
+      "de": "not available"
+    },
+    "units": {
+      "en": "units/unit",
+      "fr": "unit\u00e9s/unit\u00e9",
+      "nl": "eenheden/eenheid",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "76",
+    "enginetag": "areaPerUnit",
+    "names": {
+      "en": "Surface area/piece",
+      "fr": "Surface/pi\u00e8ce",
+      "nl": "Oppervlakte/stuk",
+      "de": "not available"
+    },
+    "units": {
+      "en": "not available",
+      "fr": "not available",
+      "nl": "not available",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "77",
+    "enginetag": "powerPerUnit",
+    "names": {
+      "en": "Power/piece",
+      "fr": "Puissance/pi\u00e8ce",
+      "nl": "Vermogen/stuk",
+      "de": "not available"
+    },
+    "units": {
+      "en": "kW/unit",
+      "fr": "KW/unit\u00e9",
+      "nl": "kW/eenheid",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "78",
+    "enginetag": "surfaceArea",
+    "names": {
+      "en": "Worksection surface area",
+      "fr": "Surface du mat\u00e9riau",
+      "nl": "Worksection oppervlakte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m\u00b2",
+      "fr": "m\u00b2",
+      "nl": "m\u00b2",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "79",
+    "enginetag": "surfaceAreaElement",
+    "names": {
+      "en": "Surface area",
+      "fr": "Surface",
+      "nl": "Oppervlakte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m\u00b2",
+      "fr": "m\u00b2",
+      "nl": "m\u00b2",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "80",
+    "enginetag": "profileLengthElement",
+    "names": {
+      "en": "Length",
+      "fr": "Longueur",
+      "nl": "Lengte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "81",
+    "enginetag": "numberElements",
+    "names": {
+      "en": "Number elements",
+      "fr": "Nombre d'\u00e9l\u00e9ments",
+      "nl": "Aantal elementen",
+      "de": "not available"
+    },
+    "units": {
+      "en": "piece",
+      "fr": "pi\u00e8ce",
+      "nl": "stuk",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "82",
+    "enginetag": "surfaceWeight",
+    "names": {
+      "en": "Surface weight",
+      "fr": "Ratio",
+      "nl": "Oppervlakte gewicht",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "83",
+    "enginetag": "profileThickness",
+    "names": {
+      "en": "Profile thickness",
+      "fr": "Epaisseur du profil",
+      "nl": "Profiel dikte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "84",
+    "enginetag": "notApplicable",
+    "names": {
+      "en": "Not applicable",
+      "fr": "Pas d'application",
+      "nl": "Niet van toepassing",
+      "de": "not available"
+    },
+    "units": {
+      "en": "",
+      "fr": "",
+      "nl": "",
+      "de": ""
+    }
+  },
+  {
+    "id": "85",
+    "enginetag": "depth",
+    "names": {
+      "en": "Depth",
+      "fr": "Profondeur",
+      "nl": "Diepte",
+      "de": "not available"
+    },
+    "units": {
+      "en": "m",
+      "fr": "m",
+      "nl": "m",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "86",
+    "enginetag": "numberPieces",
+    "names": {
+      "en": "Number of pieces",
+      "fr": "Nombre de pi\u00e8ces",
+      "nl": "Aantal stuks",
+      "de": "not available"
+    },
+    "units": {
+      "en": "piece",
+      "fr": "pi\u00e8ce",
+      "nl": "stuk",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "87",
+    "enginetag": "power",
+    "names": {
+      "en": "Heat demand",
+      "fr": "Demande de chaleur",
+      "nl": "Warmtevraag",
+      "de": "not available"
+    },
+    "units": {
+      "en": "kW",
+      "fr": "KW",
+      "nl": "kW",
+      "de": "not available"
+    }
+  }
+]

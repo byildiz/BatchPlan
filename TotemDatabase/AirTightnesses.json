@@ -1,0 +1,35 @@
+[
+  {
+    "id": "AT1",
+    "name": {
+      "en": "Default EPB value (12 m\u00b3/h.m\u00b2)",
+      "fr": "Valeur PEB par d\u00e9faut (12 m\u00b3/h.m\u00b2)",
+      "nl": "Default EPB waarde (12 m\u00b3/h.m\u00b2)",
+      "de": ""
+    },
+    "orderVisualisation": 1.0,
+    "v50": 12.0
+  },
+  {
+    "id": "AT2",
+    "name": {
+      "en": "Low energy standard (6 m\u00b3/h.m\u00b2)",
+      "fr": "Standard basse \u00e9nergie (6 m\u00b3/h.m\u00b2)",
+      "nl": "Lage-energie standaard (6 m\u00b3/h.m\u00b2)",
+      "de": ""
+    },
+    "orderVisualisation": 2.0,
+    "v50": 6.0
+  },
+  {
+    "id": "AT3",
+    "name": {
+      "en": "Passive standard (1 m\u00b3/h.m\u00b2)",
+      "fr": "Standard passif (1 m\u00b3/h.m\u00b2)",
+      "nl": "Passief standaard (1 m\u00b3/h.m\u00b2)",
+      "de": ""
+    },
+    "orderVisualisation": 3.0,
+    "v50": 1.0
+  }
+]

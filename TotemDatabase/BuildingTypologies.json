@@ -1,0 +1,262 @@
+[
+  {
+    "id": "BT1",
+    "buildingFunctionId": "BF1",
+    "names": {
+      "en": "Detached",
+      "fr": "Maison isol\u00e9e ",
+      "nl": "Vrijstaand",
+      "de": "Frei stehend"
+    }
+  },
+  {
+    "id": "BT2",
+    "buildingFunctionId": "BF1",
+    "names": {
+      "en": "Semi-detached",
+      "fr": "Maison trois fa\u00e7ades",
+      "nl": "Halfopen bebouwing",
+      "de": "Doppelhaus "
+    }
+  },
+  {
+    "id": "BT3",
+    "buildingFunctionId": "BF1",
+    "names": {
+      "en": "Terraced",
+      "fr": "Maison mitoyenne",
+      "nl": "Gesloten bebouwing",
+      "de": "geschlossener Bauweise "
+    }
+  },
+  {
+    "id": "BT4",
+    "buildingFunctionId": "BF1",
+    "names": {
+      "en": "Apartment",
+      "fr": "Appartement",
+      "nl": "Appartement",
+      "de": "Mehrfamilienhaus"
+    }
+  },
+  {
+    "id": "BT5",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Public, single-user",
+      "fr": "Public, utilisateur unique",
+      "nl": "Publiek, \u00e9\u00e9n gebruiker",
+      "de": "\u00d6ffentlich, Einzelnutzer"
+    }
+  },
+  {
+    "id": "BT6",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Public, single-tenant",
+      "fr": "Public, locataire unique",
+      "nl": "Publiek, \u00e9\u00e9n huurder",
+      "de": "\u00d6ffentlich, Single-Tenant"
+    }
+  },
+  {
+    "id": "BT7",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Public, multi-tenant",
+      "fr": "Public, locataires multiples",
+      "nl": "Publiek, meerdere gebruikers",
+      "de": "\u00d6ffentlich, Multi-Tenant"
+    }
+  },
+  {
+    "id": "BT8",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Private, single-user",
+      "fr": "Priv\u00e9, utilisateur unique",
+      "nl": "Privaat, \u00e9\u00e9n gebruiker",
+      "de": "Privat, Einzelnutzer"
+    }
+  },
+  {
+    "id": "BT9",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Private, single-tenant",
+      "fr": "Priv\u00e9, locataire unique",
+      "nl": "Privaat, \u00e9\u00e9n huurder",
+      "de": "Privat, Single-Tenant"
+    }
+  },
+  {
+    "id": "BT10",
+    "buildingFunctionId": "BF2",
+    "names": {
+      "en": "Private, multi-tenant",
+      "fr": "Priv\u00e9, locataires multiples",
+      "nl": "Privaat, meerdere gebruikers",
+      "de": "Privat, Multi-Tenant"
+    }
+  },
+  {
+    "id": "BT11",
+    "buildingFunctionId": "BF3",
+    "names": {
+      "en": "Factory / production facility / workshop",
+      "fr": "Usine / lieu de production / atelier",
+      "nl": "Fabriek / productielocatie / werkplaats",
+      "de": "Fabrik / Produktionsst\u00e4tte / Werkstatt"
+    }
+  },
+  {
+    "id": "BT12",
+    "buildingFunctionId": "BF3",
+    "names": {
+      "en": "Laboratory",
+      "fr": "Laboratoire",
+      "nl": "Laboratorium",
+      "de": "Laboratorium"
+    }
+  },
+  {
+    "id": "BT13",
+    "buildingFunctionId": "BF3",
+    "names": {
+      "en": "Warehouse",
+      "fr": "Entrep\u00f4t",
+      "nl": "Magazijn",
+      "de": "Magazin"
+    }
+  },
+  {
+    "id": "BT14",
+    "buildingFunctionId": "BF4",
+    "names": {
+      "en": "Shop",
+      "fr": "Magasin",
+      "nl": "Winkel",
+      "de": "Laden"
+    }
+  },
+  {
+    "id": "BT15",
+    "buildingFunctionId": "BF4",
+    "names": {
+      "en": "Shopping centre",
+      "fr": "Centre commercial",
+      "nl": "Winkelcentrum",
+      "de": "Einkaufszentrum "
+    }
+  },
+  {
+    "id": "BT16",
+    "buildingFunctionId": "BF4",
+    "names": {
+      "en": "Caf\u00e9 / restaurant",
+      "fr": "Caf\u00e9 / restaurant",
+      "nl": "Caf\u00e9 / restaurant",
+      "de": "Lokal / Restaurant"
+    }
+  },
+  {
+    "id": "BT17",
+    "buildingFunctionId": "BF4",
+    "names": {
+      "en": "Hotel",
+      "fr": "H\u00f4tel",
+      "nl": "Hotel",
+      "de": "Hotel"
+    }
+  },
+  {
+    "id": "BT18",
+    "buildingFunctionId": "BF4",
+    "names": {
+      "en": "Venue for gatherings",
+      "fr": "Lieu de r\u00e9union",
+      "nl": "Bijeenkomstgebouw",
+      "de": "Tagungsort"
+    }
+  },
+  {
+    "id": "BT19",
+    "buildingFunctionId": "BF5",
+    "names": {
+      "en": "Nursery school / kindergarten",
+      "fr": "\u00c9cole maternelle",
+      "nl": "Kleuterschool",
+      "de": "Kindergarten"
+    }
+  },
+  {
+    "id": "BT20",
+    "buildingFunctionId": "BF5",
+    "names": {
+      "en": "Primary education",
+      "fr": "Enseignement primaire ",
+      "nl": "Lager onderwijs",
+      "de": "Grundschulunterricht "
+    }
+  },
+  {
+    "id": "BT21",
+    "buildingFunctionId": "BF5",
+    "names": {
+      "en": "Secondary education",
+      "fr": "Enseignement secondaire ",
+      "nl": "Middelbaar onderwijs",
+      "de": "Sekundarbereich"
+    }
+  },
+  {
+    "id": "BT22",
+    "buildingFunctionId": "BF5",
+    "names": {
+      "en": "Higher education",
+      "fr": "Enseignement sup\u00e9rieur ",
+      "nl": "Hoger onderwijs",
+      "de": "Hochschulunterricht"
+    }
+  },
+  {
+    "id": "BT23",
+    "buildingFunctionId": "BF6",
+    "names": {
+      "en": "Hospital",
+      "fr": "H\u00f4pital",
+      "nl": "Ziekenhuis",
+      "de": "Krankenhaus "
+    }
+  },
+  {
+    "id": "BT24",
+    "buildingFunctionId": "BF6",
+    "names": {
+      "en": "Residential care",
+      "fr": "Centre de soins r\u00e9sidentiels",
+      "nl": "Woonzorgcentrum",
+      "de": "Wohnpflegezentrum"
+    }
+  },
+  {
+    "id": "BT25",
+    "buildingFunctionId": "BF6",
+    "names": {
+      "en": "Non-clinical care",
+      "fr": "Centre de soins non cliniques",
+      "nl": "Niet-klinische zorg",
+      "de": "Nichtklinisches Pflegezentrum"
+    }
+  },
+  {
+    "id": "BT26",
+    "buildingFunctionId": "BF8",
+    "names": {
+      "en": "Recreational",
+      "fr": "R\u00e9cr\u00e9atif ",
+      "nl": "Recreatief",
+      "de": "Entspannend"
+    }
+  }
+]

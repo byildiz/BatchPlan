@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ES1",
+    "name": {
+      "en": "Heat from condensing gas boiler",
+      "fr": "Chaleur provenant d'une chaudi\u00e8re gaz \u00e0 condensation",
+      "nl": "Warmte uit condenserende gasketel",
+      "de": ""
+    },
+    "operationalEnergySource": "natural gas",
+    "orderVisualisation": 1.0,
+    "process_id": 1.0,
+    "process_name": "Heat, central or small-scale, natural gas [BE]| heat production, natural gas, at boiler condensing modulating <100kW [excl. boiler]| Alloc Rec, U"
+  },
+  {
+    "id": "ES3",
+    "name": {
+      "en": "Heat from condensing oil boiler",
+      "fr": "Chaleur provenant d'une chaudi\u00e8re mazout \u00e0 condensation",
+      "nl": "Warmte uit condenserende stookolieketel",
+      "de": ""
+    },
+    "operationalEnergySource": "oil",
+    "orderVisualisation": 2.0,
+    "process_id": 152.0,
+    "process_name": "Heat, central or small-scale, other than natural gas [BE]| heat production, light fuel oil, at boiler 10kW condensing, non-modulating [excl. boiler]| Cut-off, U"
+  },
+  {
+    "id": "ES2",
+    "name": {
+      "en": "Electricity",
+      "fr": "Electricit\u00e9",
+      "nl": "Elektriciteit",
+      "de": ""
+    },
+    "operationalEnergySource": "electricity",
+    "orderVisualisation": 3.0,
+    "process_id": 34.0,
+    "process_name": "Electricity, low voltage {BE} [unit MJ]| market for | Alloc Rec, U"
+  }
+]

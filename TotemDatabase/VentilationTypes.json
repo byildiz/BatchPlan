@@ -1,0 +1,24 @@
+[
+  {
+    "id": "VT1",
+    "name": {
+      "en": "Natural or mechanical ventilation without heat recovery",
+      "fr": "Ventilation naturelle ou m\u00e9canique sans r\u00e9cup\u00e9ration de chaleur",
+      "nl": "Natuurlijke of mechanische ventilatie zonder warmteterugwinning",
+      "de": ""
+    },
+    "orderVisualisation": 1.0,
+    "rpreh": 1.0
+  },
+  {
+    "id": "VT2",
+    "name": {
+      "en": "Mechanical ventilation with heat recovering",
+      "fr": "Ventilation m\u00e9canique avec r\u00e9cup\u00e9ration de chaleur",
+      "nl": "Mechanische ventilatie met warmteterugwinning",
+      "de": ""
+    },
+    "orderVisualisation": 2.0,
+    "rpreh": 0.5
+  }
+]

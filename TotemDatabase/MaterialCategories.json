@@ -1,0 +1,822 @@
+[
+  {
+    "id": "SMC1",
+    "orderVisualisation": 1,
+    "deprecated": false,
+    "names": {
+      "en": "Structural work/structure",
+      "fr": "Gros oeuvre/structure",
+      "nl": "Structuurwerk/structuur",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure",
+      "fr": "Gros oeuvre/structure",
+      "nl": "Structuurwerk/structuur",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC11",
+    "parentId": "SMC1",
+    "orderVisualisation": 1,
+    "deprecated": false,
+    "names": {
+      "en": "Masonry element (solid)",
+      "fr": "El\u00e9ment de ma\u00e7onnerie",
+      "nl": "Metselwerk",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Masonry element (solid)",
+      "fr": "Gros oeuvre/structure - El\u00e9ment de ma\u00e7onnerie",
+      "nl": "Structuurwerk/structuur - Metselwerk",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC13",
+    "parentId": "SMC1",
+    "orderVisualisation": 2,
+    "deprecated": false,
+    "names": {
+      "en": "Wood structure ",
+      "fr": "Structure bois",
+      "nl": "Houten structuur",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Wood structure ",
+      "fr": "Gros oeuvre/structure - Structure bois",
+      "nl": "Structuurwerk/structuur - Houten structuur",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC14",
+    "parentId": "SMC1",
+    "orderVisualisation": 3,
+    "deprecated": false,
+    "names": {
+      "en": "Metallic structure ",
+      "fr": "Structure m\u00e9tallique",
+      "nl": "Metalen structuur",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Metallic structure ",
+      "fr": "Gros oeuvre/structure - Structure m\u00e9tallique",
+      "nl": "Structuurwerk/structuur - Metalen structuur",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC27",
+    "parentId": "SMC1",
+    "orderVisualisation": 4,
+    "deprecated": false,
+    "names": {
+      "en": "Prefabricated element",
+      "fr": "\u00c9l\u00e9ment pr\u00e9fabriqu\u00e9",
+      "nl": "Prefab element",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Prefabricated element",
+      "fr": "Gros oeuvre/structure - \u00c9l\u00e9ment pr\u00e9fabriqu\u00e9",
+      "nl": "Structuurwerk/structuur - Prefab element",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC51",
+    "parentId": "SMC1",
+    "orderVisualisation": 5,
+    "deprecated": false,
+    "names": {
+      "en": "Precast concrete",
+      "fr": "B\u00e9ton pr\u00e9fabriqu\u00e9",
+      "nl": "Prefab beton",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Precast concrete",
+      "fr": "Gros oeuvre/structure - B\u00e9ton pr\u00e9fabriqu\u00e9",
+      "nl": "Structuurwerk/structuur - Prefab beton",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC3",
+    "parentId": "SMC1",
+    "orderVisualisation": 6,
+    "deprecated": false,
+    "names": {
+      "en": "Cast in situ concrete",
+      "fr": "B\u00e9ton - in situ",
+      "nl": "Beton - in situ",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Cast in situ concrete",
+      "fr": "Gros oeuvre/structure - B\u00e9ton - in situ",
+      "nl": "Structuurwerk/structuur - Beton - in situ",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC17",
+    "parentId": "SMC1",
+    "orderVisualisation": 7,
+    "deprecated": false,
+    "names": {
+      "en": "Board",
+      "fr": "Panneau",
+      "nl": "Plaat",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Board",
+      "fr": "Gros oeuvre/structure - Panneau",
+      "nl": "Structuurwerk/structuur - Plaat",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC28",
+    "parentId": "SMC1",
+    "orderVisualisation": 8,
+    "deprecated": false,
+    "names": {
+      "en": "Mortar, aggregates, sand",
+      "fr": "Mortier, granulats, sable",
+      "nl": "Mortel, aggregaat, zand",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Mortar, aggregates, sand",
+      "fr": "Gros oeuvre/structure - Mortier, granulats, sable",
+      "nl": "Structuurwerk/structuur - Mortel, aggregaat, zand",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC50",
+    "parentId": "SMC1",
+    "orderVisualisation": 9,
+    "deprecated": false,
+    "names": {
+      "en": "Reinforcement steel",
+      "fr": "Armature m\u00e9tallique",
+      "nl": "Wapeningsstaal",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Structural work/structure - Reinforcement steel",
+      "fr": "Gros oeuvre/structure - Armature m\u00e9tallique",
+      "nl": "Structuurwerk/structuur - Wapeningsstaal",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "SMC2",
+    "orderVisualisation": 2,
+    "deprecated": false,
+    "names": {
+      "en": "Insulation",
+      "fr": "Isolation",
+      "nl": "Isolatie",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Insulation",
+      "fr": "Isolation",
+      "nl": "Isolatie",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC6",
+    "parentId": "SMC2",
+    "orderVisualisation": 201,
+    "deprecated": false,
+    "names": {
+      "en": "Insulating screed",
+      "fr": "Chape isolante",
+      "nl": "Isolerende dekvloer",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Insulation - Insulating screed",
+      "fr": "Isolation - Chape isolante",
+      "nl": "Isolatie - Isolerende dekvloer",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC29",
+    "parentId": "SMC2",
+    "orderVisualisation": 202,
+    "deprecated": false,
+    "names": {
+      "en": "Sandwich panel",
+      "fr": "Panneau sandwich",
+      "nl": "Sandwichpaneel",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Insulation - Sandwich panel",
+      "fr": "Isolation - Panneau sandwich",
+      "nl": "Isolatie - Sandwichpaneel",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC32",
+    "parentId": "SMC2",
+    "orderVisualisation": 203,
+    "deprecated": false,
+    "names": {
+      "en": "Insulation",
+      "fr": "Isolant",
+      "nl": "Isolatie",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Insulation - Insulation",
+      "fr": "Isolation - Isolant",
+      "nl": "Isolatie - Isolatie",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "SMC3",
+    "orderVisualisation": 3,
+    "deprecated": false,
+    "names": {
+      "en": "Finishes (internal)",
+      "fr": "Finitions (int\u00e9rieur)",
+      "nl": "Afwerking (binnen)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal)",
+      "fr": "Finitions (int\u00e9rieur)",
+      "nl": "Afwerking (binnen)",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC8",
+    "parentId": "SMC3",
+    "orderVisualisation": 301,
+    "deprecated": false,
+    "names": {
+      "en": "Rigid flooring",
+      "fr": "Rev\u00eatement de sol rigide",
+      "nl": "Vloerafwerking, hard",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - Rigid flooring",
+      "fr": "Finitions (int\u00e9rieur) - Rev\u00eatement de sol rigide",
+      "nl": "Afwerking (binnen) - Vloerafwerking, hard",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC9",
+    "parentId": "SMC3",
+    "orderVisualisation": 302,
+    "deprecated": false,
+    "names": {
+      "en": "Continuous flooring  and screed",
+      "fr": "Rev\u00eatement de sol continu et chape",
+      "nl": "Doorlopende (dek)vloer",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - Continuous flooring  and screed",
+      "fr": "Finitions (int\u00e9rieur) - Rev\u00eatement de sol continu et chape",
+      "nl": "Afwerking (binnen) - Doorlopende (dek)vloer",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC21",
+    "parentId": "SMC3",
+    "orderVisualisation": 303,
+    "deprecated": false,
+    "names": {
+      "en": "Finishing (walls, ceiling)",
+      "fr": "Finition (murs, plafond)",
+      "nl": "Afwerking (muren, plafonds) ",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - Finishing (walls, ceiling)",
+      "fr": "Finitions (int\u00e9rieur) - Finition (murs, plafond)",
+      "nl": "Afwerking (binnen) - Afwerking (muren, plafonds) ",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC24",
+    "parentId": "SMC3",
+    "orderVisualisation": 304,
+    "deprecated": false,
+    "names": {
+      "en": "Soft flooring",
+      "fr": "Rev\u00eatement de sol souple",
+      "nl": "Vloerafwerking, zacht",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - Soft flooring",
+      "fr": "Finitions (int\u00e9rieur) - Rev\u00eatement de sol souple",
+      "nl": "Afwerking (binnen) - Vloerafwerking, zacht",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC31",
+    "parentId": "SMC3",
+    "orderVisualisation": 305,
+    "deprecated": false,
+    "names": {
+      "en": "False ceiling and elevated floor",
+      "fr": "Faux plafond et faux plancher",
+      "nl": "Vals plafond en verhoogde vloer",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - False ceiling and elevated floor",
+      "fr": "Finitions (int\u00e9rieur) - Faux plafond et faux plancher",
+      "nl": "Afwerking (binnen) - Vals plafond en verhoogde vloer",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC34",
+    "parentId": "SMC3",
+    "orderVisualisation": 306,
+    "deprecated": false,
+    "names": {
+      "en": "Coating (interior)",
+      "fr": "Enduit (int\u00e9rieur)",
+      "nl": "Coating (binnen)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (internal) - Coating (interior)",
+      "fr": "Finitions (int\u00e9rieur) - Enduit (int\u00e9rieur)",
+      "nl": "Afwerking (binnen) - Coating (binnen)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "SMC4",
+    "orderVisualisation": 4,
+    "deprecated": false,
+    "names": {
+      "en": "Finishes (external)",
+      "fr": "Finitions (ext\u00e9rieur)",
+      "nl": "Afwerking (buiten)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (external)",
+      "fr": "Finitions (ext\u00e9rieur)",
+      "nl": "Afwerking (buiten)",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC30",
+    "parentId": "SMC4",
+    "orderVisualisation": 401,
+    "deprecated": false,
+    "names": {
+      "en": "Roofs/Walls cladding (exterior)",
+      "fr": "Couverture de toitures/Murs (ext\u00e9rieurs)",
+      "nl": "Dakbedekking/muurbekleding (buiten)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (external) - Roofs/Walls cladding (exterior)",
+      "fr": "Finitions (ext\u00e9rieur) - Couverture de toitures/Murs (ext\u00e9rieurs)",
+      "nl": "Afwerking (buiten) - Dakbedekking/muurbekleding (buiten)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC33",
+    "parentId": "SMC4",
+    "orderVisualisation": 402,
+    "deprecated": false,
+    "names": {
+      "en": "Coating (exterior)",
+      "fr": "Enduit (ext\u00e9rieur)",
+      "nl": "Coating (buiten)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Finishes (external) - Coating (exterior)",
+      "fr": "Finitions (ext\u00e9rieur) - Enduit (ext\u00e9rieur)",
+      "nl": "Afwerking (buiten) - Coating (buiten)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "SMC6",
+    "orderVisualisation": 5,
+    "deprecated": false,
+    "names": {
+      "en": "Door and window",
+      "fr": "Porte et fen\u00eatre",
+      "nl": "Ramen en deuren",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Door and window",
+      "fr": "Porte et fen\u00eatre",
+      "nl": "Ramen en deuren",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC36",
+    "parentId": "SMC6",
+    "orderVisualisation": 501,
+    "deprecated": false,
+    "names": {
+      "en": "Frame and panel (door and window)",
+      "fr": "Ch\u00e2ssis et panneau (porte et fen\u00eatre)",
+      "nl": "Kader en paneel (deur en raam)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Door and window - Frame and panel (door and window)",
+      "fr": "Porte et fen\u00eatre - Ch\u00e2ssis et panneau (porte et fen\u00eatre)",
+      "nl": "Ramen en deuren - Kader en paneel (deur en raam)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC37",
+    "parentId": "SMC6",
+    "orderVisualisation": 502,
+    "deprecated": false,
+    "names": {
+      "en": "Glass",
+      "fr": "Vitrage",
+      "nl": "Glas",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Door and window - Glass",
+      "fr": "Porte et fen\u00eatre - Vitrage",
+      "nl": "Ramen en deuren - Glas",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC38",
+    "parentId": "SMC6",
+    "orderVisualisation": 503,
+    "deprecated": false,
+    "names": {
+      "en": "Lintel and sill",
+      "fr": "Linteau et seuil",
+      "nl": "Latei en dorpel / vensterbank",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Door and window - Lintel and sill",
+      "fr": "Porte et fen\u00eatre - Linteau et seuil",
+      "nl": "Ramen en deuren - Latei en dorpel / vensterbank",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC39",
+    "parentId": "SMC6",
+    "orderVisualisation": 504,
+    "deprecated": false,
+    "names": {
+      "en": "Sun blind",
+      "fr": "Protection solaire",
+      "nl": "Zonwering",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Door and window - Sun blind",
+      "fr": "Porte et fen\u00eatre - Protection solaire",
+      "nl": "Ramen en deuren - Zonwering",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "SMC7",
+    "orderVisualisation": 6,
+    "deprecated": false,
+    "names": {
+      "en": "Services",
+      "fr": "Installations techniques",
+      "nl": "Technische installaties",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services",
+      "fr": "Installations techniques",
+      "nl": "Technische installaties",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC40",
+    "parentId": "SMC7",
+    "orderVisualisation": 601,
+    "deprecated": false,
+    "names": {
+      "en": "Production and storage (heating and hot water)",
+      "fr": "Production et stockage (chauffage et eau chaude sanitaire)",
+      "nl": "Productie en opslag (verwarming en warm water)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Production and storage (heating and hot water)",
+      "fr": "Installations techniques - Production et stockage (chauffage et eau chaude sanitaire)",
+      "nl": "Technische installaties - Productie en opslag (verwarming en warm water)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC41",
+    "parentId": "SMC7",
+    "orderVisualisation": 602,
+    "deprecated": false,
+    "names": {
+      "en": "Distribution and evacuation (heating, water, gas, oil)",
+      "fr": "Conduit de distribution et \u00e9vacuation (chauffage, eau, gaz, mazout)",
+      "nl": "Distributie en afvoer (verwarming, water, gas, olie)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Distribution and evacuation (heating, water, gas, oil)",
+      "fr": "Installations techniques - Conduit de distribution et \u00e9vacuation (chauffage, eau, gaz, mazout)",
+      "nl": "Technische installaties - Distributie en afvoer (verwarming, water, gas, olie)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC42",
+    "parentId": "SMC7",
+    "orderVisualisation": 603,
+    "deprecated": false,
+    "names": {
+      "en": "Ventilation and air conditioning unit",
+      "fr": "Groupe de ventilation et d'air conditionn\u00e9",
+      "nl": "Ventilatie en airconditioning",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Ventilation and air conditioning unit",
+      "fr": "Installations techniques - Groupe de ventilation et d'air conditionn\u00e9",
+      "nl": "Technische installaties - Ventilatie en airconditioning",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC43",
+    "parentId": "SMC7",
+    "orderVisualisation": 604,
+    "deprecated": false,
+    "names": {
+      "en": "Solar panel",
+      "fr": "Panneau solaire",
+      "nl": "Zonnepaneel",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Solar panel",
+      "fr": "Installations techniques - Panneau solaire",
+      "nl": "Technische installaties - Zonnepaneel",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC44",
+    "parentId": "SMC7",
+    "orderVisualisation": 605,
+    "deprecated": false,
+    "names": {
+      "en": "Heating emission",
+      "fr": "Emission de chaleur",
+      "nl": "Warmteafgifte",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Heating emission",
+      "fr": "Installations techniques - Emission de chaleur",
+      "nl": "Technische installaties - Warmteafgifte",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC52",
+    "parentId": "SMC7",
+    "orderVisualisation": 606,
+    "deprecated": false,
+    "names": {
+      "en": "Heating and cooling emission",
+      "fr": "Emission de chaleur et du froid",
+      "nl": "Warmte- en koelteafgifte",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Heating and cooling emission",
+      "fr": "Installations techniques - Emission de chaleur et du froid",
+      "nl": "Technische installaties - Warmte- en koelteafgifte",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC45",
+    "parentId": "SMC7",
+    "orderVisualisation": 607,
+    "deprecated": false,
+    "names": {
+      "en": "Auxiliary and accessory (heating, hot water and ventilation)",
+      "fr": "Auxiliaires et accessoires (chauffage, eau chaude et ventilation)",
+      "nl": "Hulpstuk en accessoire (verwarming, warm water en ventilatie)",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Services - Auxiliary and accessory (heating, hot water and ventilation)",
+      "fr": "Installations techniques - Auxiliaires et accessoires (chauffage, eau chaude et ventilation)",
+      "nl": "Technische installaties - Hulpstuk en accessoire (verwarming, warm water en ventilatie)",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC47",
+    "orderVisualisation": 47,
+    "deprecated": false,
+    "names": {
+      "en": "Ground surface treatment",
+      "fr": "Traitement du sol",
+      "nl": "Afwerking bodem",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Ground surface treatment",
+      "fr": "Traitement du sol",
+      "nl": "Afwerking bodem",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "SMC5",
+    "orderVisualisation": 99,
+    "deprecated": false,
+    "names": {
+      "en": "Others",
+      "fr": "Autres",
+      "nl": "Overige",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others",
+      "fr": "Autres",
+      "nl": "Overige",
+      "de": "not available"
+    }
+  },
+  {
+    "id": "MC1",
+    "parentId": "SMC5",
+    "orderVisualisation": 9901,
+    "deprecated": false,
+    "names": {
+      "en": "Earthworks (Excavation, egalisation)",
+      "fr": "Travaux de terrassement (excavation, \u00e9galisation)",
+      "nl": "uitgraving",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Earthworks (Excavation, egalisation)",
+      "fr": "Autres - Travaux de terrassement (excavation, \u00e9galisation)",
+      "nl": "Overige - uitgraving",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC7",
+    "parentId": "SMC5",
+    "orderVisualisation": 9902,
+    "deprecated": false,
+    "names": {
+      "en": "Membrane",
+      "fr": "Membrane",
+      "nl": "Membraan",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Membrane",
+      "fr": "Autres - Membrane",
+      "nl": "Overige - Membraan",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC15",
+    "parentId": "SMC5",
+    "orderVisualisation": 9903,
+    "deprecated": false,
+    "names": {
+      "en": "Air",
+      "fr": "Air",
+      "nl": "Luchtlaag",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Air",
+      "fr": "Autres - Air",
+      "nl": "Overige - Luchtlaag",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC16",
+    "parentId": "SMC5",
+    "orderVisualisation": 9904,
+    "deprecated": false,
+    "names": {
+      "en": "Binding",
+      "fr": "Fixation",
+      "nl": "Verbinding",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Binding",
+      "fr": "Autres - Fixation",
+      "nl": "Overige - Verbinding",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC35",
+    "parentId": "SMC5",
+    "orderVisualisation": 9905,
+    "deprecated": false,
+    "names": {
+      "en": "Custom",
+      "fr": "Divers",
+      "nl": "Allerlei",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Custom",
+      "fr": "Autres - Divers",
+      "nl": "Overige - Allerlei",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC49",
+    "parentId": "SMC5",
+    "orderVisualisation": 9906,
+    "deprecated": false,
+    "names": {
+      "en": "Staircase",
+      "fr": "Escalier",
+      "nl": "Trappen",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Staircase",
+      "fr": "Autres - Escalier",
+      "nl": "Overige - Trappen",
+      "de": "not available - not available"
+    }
+  },
+  {
+    "id": "MC48",
+    "parentId": "SMC5",
+    "orderVisualisation": 9999,
+    "deprecated": true,
+    "names": {
+      "en": "Combination",
+      "fr": "Combinaison",
+      "nl": "Combinatie",
+      "de": "not available"
+    },
+    "fullnames": {
+      "en": "Others - Combination",
+      "fr": "Autres - Combinaison",
+      "nl": "Overige - Combinatie",
+      "de": "not available - not available"
+    }
+  }
+]

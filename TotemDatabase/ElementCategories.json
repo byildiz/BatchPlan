@@ -1,0 +1,1954 @@
+[
+  {
+    "id": "EC-23",
+    "orderVisualisation": 1,
+    "orientation": null,
+    "names": {
+      "en": "Floor",
+      "fr": "Plancher",
+      "nl": "Vloer",
+      "de": "Boden"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": null,
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC7",
+    "parentId": "EC-23",
+    "orderVisualisation": 2,
+    "orientation": 180.0,
+    "names": {
+      "en": "Floor on grade",
+      "fr": "Plancher sur sol",
+      "nl": "Vloer op volle grond",
+      "de": "Platte auf vollem Boden"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(13.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "4;0"
+  },
+  {
+    "id": "EC8",
+    "parentId": "EC-23",
+    "orderVisualisation": 3,
+    "orientation": 180.0,
+    "names": {
+      "en": "Storey floor",
+      "fr": "Plancher d'\u00e9tage",
+      "nl": "Verdiepingsvloer",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(23.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0;1;2;3;5;6"
+  },
+  {
+    "id": "EC9",
+    "parentId": "EC-23",
+    "orderVisualisation": 4,
+    "orientation": 0.0,
+    "names": {
+      "en": "Attic floor",
+      "fr": "Plancher du grenier",
+      "nl": "Zoldervloer",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(23.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "3;0"
+  },
+  {
+    "id": "EC10",
+    "parentId": "EC-23",
+    "orderVisualisation": 5,
+    "orientation": 180.0,
+    "names": {
+      "en": "Floor above unheated space",
+      "fr": "Plancher au-dessus d'un local non chauff\u00e9",
+      "nl": "Vloer boven onverwarmde ruimte",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(23.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": "3.0"
+  },
+  {
+    "id": "EC-24",
+    "orderVisualisation": 6,
+    "orientation": null,
+    "names": {
+      "en": "Wall",
+      "fr": "Mur",
+      "nl": "Wand",
+      "de": "Wand"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": null,
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC5",
+    "parentId": "EC-24",
+    "orderVisualisation": 7,
+    "orientation": 0.0,
+    "names": {
+      "en": "Basement wall",
+      "fr": "Mur de cave",
+      "nl": "Kelderwand",
+      "de": "Kellerwand"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(16.2)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "4;0"
+  },
+  {
+    "id": "EC11",
+    "parentId": "EC-24",
+    "orderVisualisation": 8,
+    "orientation": 0.0,
+    "names": {
+      "en": "External Wall",
+      "fr": "Mur ext\u00e9rieur",
+      "nl": "Buitenwand",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(21.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC39",
+    "parentId": "EC-24",
+    "orderVisualisation": 9,
+    "orientation": 0.0,
+    "names": {
+      "en": "Curtain Wall",
+      "fr": "Mur-rideau",
+      "nl": "Gordijngevel",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "SEMIFIXED",
+    "defaultBbsfb": "(21.4)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC1",
+    "parentId": "EC-24",
+    "orderVisualisation": 10,
+    "orientation": 0.0,
+    "names": {
+      "en": "Load-bearing internal wall",
+      "fr": "Mur int\u00e9rieur porteur",
+      "nl": "Dragende binnenwand",
+      "de": "Tragende Innenwand"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(22.1)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0;2;3;5"
+  },
+  {
+    "id": "EC2",
+    "parentId": "EC-24",
+    "orderVisualisation": 11,
+    "orientation": 0.0,
+    "names": {
+      "en": "Non-load-bearing internal wall",
+      "fr": "Mur int\u00e9rieur non porteur",
+      "nl": "Niet-dragende binnenwand",
+      "de": "Nicht tragende Innenwand/massive Struktur"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(22.3)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 30.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0;2;3;5"
+  },
+  {
+    "id": "EC40",
+    "parentId": "EC-24",
+    "orderVisualisation": 12,
+    "orientation": 0.0,
+    "names": {
+      "en": "Non-load-bearing internal wall/light structure",
+      "fr": "Mur int\u00e9rieur non porteur/structure l\u00e9g\u00e8re",
+      "nl": "Niet-dragende binnenwand/lichte structuur",
+      "de": "Nicht tragende Innenwand/leichte Struktur"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(22.3)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 30.0,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC12",
+    "parentId": "EC-24",
+    "orderVisualisation": 13,
+    "orientation": 0.0,
+    "names": {
+      "en": "Party wall",
+      "fr": "Mur mitoyen",
+      "nl": "Gemene muur",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(22.8)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "2;0;3;5"
+  },
+  {
+    "id": "EC36",
+    "parentId": "EC-24",
+    "orderVisualisation": 14,
+    "orientation": 0.0,
+    "names": {
+      "en": "Wall in contact with unheated space",
+      "fr": "Mur en contact avec un espace non chauff\u00e9",
+      "nl": "Wand in  contact met een onverwarmde ruimte",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(22.)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": "3.0"
+  },
+  {
+    "id": "EC-13",
+    "orderVisualisation": 15,
+    "orientation": 0.0,
+    "names": {
+      "en": "Roof",
+      "fr": "Toiture",
+      "nl": "Dak",
+      "de": "Dach"
+    },
+    "thermalContribution": true,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(27.)+",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC3",
+    "parentId": "EC-13",
+    "orderVisualisation": 16,
+    "orientation": 0.0,
+    "names": {
+      "en": "Flat roof",
+      "fr": "Toiture plate",
+      "nl": "Plat dak",
+      "de": "Flachdach"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(27.1)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC4",
+    "parentId": "EC-13",
+    "orderVisualisation": 17,
+    "orientation": 45.0,
+    "names": {
+      "en": "Pitched roof",
+      "fr": "Toiture en pente",
+      "nl": "Hellend dak",
+      "de": "Schr\u00e4gdach"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(27.2)+",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC-15",
+    "orderVisualisation": 18,
+    "orientation": null,
+    "names": {
+      "en": "Building frame",
+      "fr": "\u00c9l\u00e9ment de structure",
+      "nl": "Structureel element",
+      "de": "Strukturelement"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(28.)+",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC17",
+    "parentId": "EC-15",
+    "orderVisualisation": 19,
+    "orientation": 0.0,
+    "names": {
+      "en": "Column",
+      "fr": "Colonne",
+      "nl": "Kolom",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "M",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(28./2)",
+    "singleComponent": true,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC16",
+    "parentId": "EC-15",
+    "orderVisualisation": 20,
+    "orientation": 0.0,
+    "names": {
+      "en": "Beam",
+      "fr": "Poutre",
+      "nl": "Balk",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "M",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(28./3)",
+    "singleComponent": true,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC-25",
+    "orderVisualisation": 21,
+    "orientation": null,
+    "names": {
+      "en": "Opening",
+      "fr": "Ouverture",
+      "nl": "Opening",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": null,
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC14",
+    "parentId": "EC-25",
+    "orderVisualisation": 22,
+    "orientation": 0.0,
+    "names": {
+      "en": "External window",
+      "fr": "Fen\u00eatre ext\u00e9rieure",
+      "nl": "Buitenraam",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "M",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(31.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 30.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC38",
+    "parentId": "EC-25",
+    "orderVisualisation": 23,
+    "orientation": 0.0,
+    "names": {
+      "en": "External door",
+      "fr": "Porte ext\u00e9rieure",
+      "nl": "Buitendeur",
+      "de": "not available"
+    },
+    "thermalContribution": true,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "M",
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(31.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 30.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "1;0"
+  },
+  {
+    "id": "EC13",
+    "parentId": "EC-25",
+    "orderVisualisation": 24,
+    "orientation": 0.0,
+    "names": {
+      "en": "Internal window",
+      "fr": "Fen\u00eatre int\u00e9rieure",
+      "nl": "Binnenraam",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "M",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(32.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 30.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0;2;3;5"
+  },
+  {
+    "id": "EC37",
+    "parentId": "EC-25",
+    "orderVisualisation": 25,
+    "orientation": 0.0,
+    "names": {
+      "en": "Internal door",
+      "fr": "Porte int\u00e9rieure",
+      "nl": "Binnendeur",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": true,
+    "hasUValue": true,
+    "compositionType": "M",
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(32.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0;2;3;5"
+  },
+  {
+    "id": "EC18",
+    "parentId": "EC-25",
+    "orderVisualisation": 26,
+    "orientation": 0.0,
+    "names": {
+      "en": "Lintel",
+      "fr": "Linteau",
+      "nl": "Latei",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "M",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(31./11)",
+    "singleComponent": true,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC19",
+    "parentId": "EC-25",
+    "orderVisualisation": 27,
+    "orientation": 90.0,
+    "names": {
+      "en": "Lintel in external wall",
+      "fr": "Linteau dans mur ext\u00e9rieur",
+      "nl": "Latei in buitenwand",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "M",
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(31./11)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC35",
+    "parentId": "EC-25",
+    "orderVisualisation": 28,
+    "orientation": 0.0,
+    "names": {
+      "en": "Door and window sill",
+      "fr": "Seuil et appui de fen\u00eatre",
+      "nl": "Dorpel en vensterbank",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "C",
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(31./44)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC20",
+    "parentId": "EC-25",
+    "orderVisualisation": 29,
+    "orientation": 90.0,
+    "names": {
+      "en": "Lintel in internal wall",
+      "fr": "Linteau dans mur int\u00e9rieur",
+      "nl": "Latei in binnenwand",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "M",
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(32./1)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "80",
+        "enginetag": "profileLengthElement",
+        "names": {
+          "en": "Length",
+          "fr": "Longueur",
+          "nl": "Lengte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m",
+          "fr": "m",
+          "nl": "m",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC-16",
+    "orderVisualisation": 30,
+    "orientation": null,
+    "names": {
+      "en": "Technical installation",
+      "fr": "Installation technique",
+      "nl": "Technische installatie",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": null,
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": true,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC28",
+    "parentId": "EC-16",
+    "orderVisualisation": 31,
+    "orientation": 0.0,
+    "names": {
+      "en": "Water supply",
+      "fr": "Distribution d'eau",
+      "nl": "Watertoevoer",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "C",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(53.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 60.0,
+    "deprecated": false,
+    "hideReversibility": true,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC29",
+    "parentId": "EC-16",
+    "orderVisualisation": 32,
+    "orientation": 0.0,
+    "names": {
+      "en": "Heating",
+      "fr": "Chauffage",
+      "nl": "Verwarming",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "C",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(56.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 60.0,
+    "deprecated": false,
+    "hideReversibility": true,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC42",
+    "parentId": "EC-16",
+    "orderVisualisation": 33,
+    "orientation": 0.0,
+    "names": {
+      "en": "Heating & domestic hot water",
+      "fr": "Chauffage & eau chaude sanitaire",
+      "nl": "Verwarming & sanitair warm water",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "C",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(56:53)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 60.0,
+    "deprecated": false,
+    "hideReversibility": true,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC34",
+    "parentId": "EC-16",
+    "orderVisualisation": 34,
+    "orientation": 0.0,
+    "names": {
+      "en": "Ventilation",
+      "fr": "Ventilation",
+      "nl": "Ventilatie",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "C",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(57.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "84",
+        "enginetag": "notApplicable",
+        "names": {
+          "en": "Not applicable",
+          "fr": "Pas d'application",
+          "nl": "Niet van toepassing",
+          "de": "not available"
+        },
+        "units": {
+          "en": "",
+          "fr": "",
+          "nl": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 60.0,
+    "deprecated": false,
+    "hideReversibility": true,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC-27",
+    "orderVisualisation": 35,
+    "orientation": null,
+    "names": {
+      "en": "Technical installation - Electrical",
+      "fr": "Installation technique - Electrique",
+      "nl": "Technische installatie - Elektrisch",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(6-)",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC-14",
+    "orderVisualisation": 36,
+    "orientation": 180.0,
+    "names": {
+      "en": "Pile foundation",
+      "fr": "Fondation sur pieux",
+      "nl": "Paalfundering",
+      "de": "Pfahlgr\u00fcndung"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(17.)+",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC-18",
+    "orderVisualisation": 37,
+    "orientation": 0.0,
+    "names": {
+      "en": "External works",
+      "fr": "\u00c9l\u00e9ments \u00e0 l'ext\u00e9rieur du b\u00e2timent",
+      "nl": "Elementen buiten het gebouw",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(9-)",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC23",
+    "parentId": "EC-18",
+    "orderVisualisation": 38,
+    "orientation": 180.0,
+    "names": {
+      "en": "Ground surface treatment",
+      "fr": "Traitement du sol",
+      "nl": "Afwerking bodem",
+      "de": "not available"
+    },
+    "thermalContribution": null,
+    "canContainElements": true,
+    "hasUValue": false,
+    "compositionType": "L",
+    "userEditability": "NORMAL",
+    "defaultBbsfb": "(94.)",
+    "singleComponent": false,
+    "modelParameters": [
+      {
+        "id": "79",
+        "enginetag": "surfaceAreaElement",
+        "names": {
+          "en": "Surface area",
+          "fr": "Surface",
+          "nl": "Oppervlakte",
+          "de": "not available"
+        },
+        "units": {
+          "en": "m\u00b2",
+          "fr": "m\u00b2",
+          "nl": "m\u00b2",
+          "de": "not available"
+        }
+      },
+      {
+        "id": "81",
+        "enginetag": "numberElements",
+        "names": {
+          "en": "Number elements",
+          "fr": "Nombre d'\u00e9l\u00e9ments",
+          "nl": "Aantal elementen",
+          "de": "not available"
+        },
+        "units": {
+          "en": "piece",
+          "fr": "pi\u00e8ce",
+          "nl": "stuk",
+          "de": "not available"
+        }
+      }
+    ],
+    "lifeTimeReplacement": 120.0,
+    "deprecated": false,
+    "hideReversibility": false,
+    "environmentTypes": "0"
+  },
+  {
+    "id": "EC-17",
+    "orderVisualisation": 39,
+    "orientation": null,
+    "names": {
+      "en": "Services: transport",
+      "fr": "Syst\u00e8mes: transport",
+      "nl": "Transportinstallaties",
+      "de": "Systeme: transport"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(66.)+",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC-21",
+    "orderVisualisation": 40,
+    "orientation": null,
+    "names": {
+      "en": "Balustrade",
+      "fr": "Balustrade",
+      "nl": "Balustrade",
+      "de": "Balustrade"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(38.)+",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC-22",
+    "orderVisualisation": 41,
+    "orientation": null,
+    "names": {
+      "en": "Services, mainly electrical",
+      "fr": "Syst\u00e8mes, principalement \u00e9lectriques",
+      "nl": "Installaties, hoofdzakelijk elektrisch",
+      "de": "Systeme, haupts\u00e4chlich Elektrik"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(6-)",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  },
+  {
+    "id": "EC-26",
+    "orderVisualisation": 42,
+    "orientation": 90.0,
+    "names": {
+      "en": "Sunblinds",
+      "fr": "Pare-soleil",
+      "nl": "Zonwering",
+      "de": "not available"
+    },
+    "thermalContribution": false,
+    "canContainElements": false,
+    "hasUValue": false,
+    "compositionType": null,
+    "userEditability": "FIXED",
+    "defaultBbsfb": "(31./7)",
+    "singleComponent": false,
+    "modelParameters": [],
+    "lifeTimeReplacement": null,
+    "deprecated": true,
+    "hideReversibility": false,
+    "environmentTypes": null
+  }
+]
