@@ -9,6 +9,7 @@ dependencies:
   - numpy=1.25.2
   - pandas=2.0.3
   - pyqt=5.15.9
+  - fire=0.5.0
   - python=3.11.4
   - pip=23.2.1
   - pip:
