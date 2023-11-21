@@ -1,8 +1,8 @@
 from pathlib import Path
 
+import fire
 import ifcopenshell
 import pandas as pd
-import fire
 
 from utils import get_bounding_box, get_geometries, get_products_and_shapes
 
