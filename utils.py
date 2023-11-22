@@ -5,7 +5,7 @@ import ifcopenshell.geom
 import matplotlib.colors as mcolors
 import pandas as pd
 from OCC.Core.Bnd import Bnd_Box
-from OCC.Core.BRepBndLib import brepbndlib_Add
+from OCC.Core.BRepBndLib import brepbndlib
 from OCC.Core.BRepMesh import BRepMesh_IncrementalMesh
 
 EXCLUDED_ELEMENTS = ("IfcSite", "IfcSpace", "IfcOpeningElement")
@@ -45,7 +45,7 @@ def get_bounding_box(shapes, tol=1e-6, use_mesh=False):
             mesh.Perform()
             if not mesh.IsDone():
                 raise AssertionError("Mesh not done.")
-        brepbndlib_Add(shape, bbox, use_mesh)
+        brepbndlib.Add(shape, bbox, use_mesh)
     return bbox.Get()
 
 
