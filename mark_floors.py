@@ -8,11 +8,12 @@ import ifcopenshell.geom
 from ifcopenshell.util.placement import get_storey_elevation
 from OCC.Display.OCCViewer import rgb_color
 from OCC.Display.SimpleGui import init_display
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow
 
 from utils import get_bounding_box
 
 display = None
+main_window = None
 
 settings = ifcopenshell.geom.settings()
 settings.set(settings.USE_PYTHON_OPENCASCADE, True)
@@ -56,7 +57,7 @@ def load_ifc(ifc_file, use_storeys):
 
 
 def main():
-    global display
+    global display, main_window
     parser = argparse.ArgumentParser()
     parser.add_argument("root")
     parser.add_argument("--use-storeys", action="store_true")
@@ -68,6 +69,13 @@ def main():
 
     display, start_display, add_menu, add_function_to_menu = init_display(size=(1024, 768))
 
+    main_window = None
+    app = QApplication.instance()
+    for widget in app.topLevelWidgets():
+        if isinstance(widget, QMainWindow):
+            main_window = widget
+    main_window.setWindowTitle("BatchPlan")
+
     viewer = display.get_parent()
     label = QLabel("", viewer)
     label.setStyleSheet("QLabel { color: black; }")
@@ -78,6 +86,7 @@ def main():
         nonlocal selected_ifc_file
         selected_ifc_file = ifc_file
         load_ifc(selected_ifc_file, args.use_storeys)
+        main_window.setWindowTitle(f"BatchPlan ({Path(ifc_file).name})")
         update_text()
 
     def update_text():
