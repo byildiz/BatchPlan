@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+from importlib import import_module
 
 import ifcopenshell
 import ifcopenshell.geom
@@ -14,14 +15,13 @@ from OCC.Display.SimpleGui import init_display
 from OCC.Extend.TopologyUtils import TopologyExplorer
 from tqdm import tqdm
 
+import filters
 import fixes
+import stylings
 from utils import (
-    get_black_color_fn,
     get_bounding_box,
-    get_carbon_color_fn,
+    get_elements_and_shapes,
     get_geometries,
-    get_hash_color_fn,
-    get_products_and_shapes,
 )
 
 # os.environ["PYTHONOCC_OFFSCREEN_RENDERER"] = "1"
@@ -29,8 +29,8 @@ from utils import (
 display, start_display, add_menu, add_function_to_menu = None, None, None, None
 
 
-def draw_shapes(display, products, shapes, color_fn=None, skip_colorless=False):
-    for product, shape in zip(products, shapes):
+def draw_shapes(display, elements, shapes, color_fn=None, skip_colorless=False):
+    for element, shape in zip(elements, shapes):
         try:
             geometry = shape.geometry
             if color_fn is None:
@@ -38,24 +38,24 @@ def draw_shapes(display, products, shapes, color_fn=None, skip_colorless=False):
                 if r < 0 or g < 0 or b < 0 or a < 0:
                     continue
             else:
-                (r, g, b, a), found = color_fn(product, shape)
+                (r, g, b, a), found = color_fn(element, shape)
                 if skip_colorless and not found:
                     continue
                 # a = 0.7
             color = rgb_color(r, g, b)
             display.DisplayShape(geometry, color=color, transparency=abs(1 - a))
         except RuntimeError as e:
-            print(f"Exception: name={product.Name}, exception={e}")
+            print(f"Exception: name={element.Name}, exception={e}")
 
 
-def draw_sections(display, products, shapes, shape_faces, color_fn=None, skip_colorless=False):
-    for product, shape, faces in zip(products, shapes, shape_faces):
+def draw_sections(display, elements, shapes, shape_faces, color_fn=None, skip_colorless=False):
+    for element, shape, faces in zip(elements, shapes, shape_faces):
         if color_fn is None:
             r, g, b, a = shape.styles[0]
             if r < 0 or g < 0 or b < 0 or a < 0:
                 continue
         else:
-            (r, g, b, a), found = color_fn(product, shape)
+            (r, g, b, a), found = color_fn(element, shape)
             if skip_colorless and not found:
                 continue
             # a = 0.7
@@ -89,22 +89,21 @@ def get_section_faces(section_surface, shape):
     return faces
 
 
-def process_using_storeys(ifc_path, out_dir, color_fn=None, skip_colorless=False):
-    ifc_file = ifcopenshell.open(ifc_path)
-    print("Loading products and shapes...")
-    # TODO implement filtering
-    products, shapes = get_products_and_shapes(ifc_file.by_type("IfcProduct"))
+def process_using_storeys(ifc_path, out_dir, filter_fn, color_fn, skip_colorless=False):
+    model = ifcopenshell.open(ifc_path)
+    print("Loading and filtering elements and shapes...")
+    elements, shapes = get_elements_and_shapes(model.by_type("IfcElement"), filter_fn)
     print("Done")
 
     print("Drawing shapes for 3D...")
     display.EraseAll()
-    draw_shapes(display, products, shapes, color_fn=color_fn, skip_colorless=skip_colorless)
+    draw_shapes(display, elements, shapes, color_fn=color_fn, skip_colorless=skip_colorless)
     print("Done")
 
     global_bbox = get_bounding_box(get_geometries(shapes))
 
     level_items = []
-    storeys = list(ifc_file.by_type("IfcBuildingStorey"))
+    storeys = list(model.by_type("IfcBuildingStorey"))
     for s0, s1 in zip(storeys[:-1], storeys[1:]):
         name = s0.Name
         section_height = (s0.Elevation + s1.Elevation) / 2000
@@ -114,19 +113,19 @@ def process_using_storeys(ifc_path, out_dir, color_fn=None, skip_colorless=False
             section_height, global_bbox[0], global_bbox[1], global_bbox[3], global_bbox[4]
         )
         section_elements = get_decomposition(s0)
-        products, shapes = get_products_and_shapes(section_elements)
-        section_products = []
+        elements, shapes = get_elements_and_shapes(section_elements)
+        section_elements = []
         section_shapes = []
         section_faces = []
-        for product, shape in zip(products, shapes):
+        for element, shape in zip(elements, shapes):
             faces = get_section_faces(section_surface, shape)
             if len(faces) > 0:
-                section_products.append(product)
+                section_elements.append(element)
                 section_shapes.append(shape)
                 section_faces.append(faces)
 
         if len(section_shapes) > 0:
-            level_items.append((name, section_products, section_shapes, section_faces))
+            level_items.append((name, section_elements, section_shapes, section_faces))
 
             # now we can calculate a more strict bbox
             bbox = get_bounding_box(get_geometries(section_shapes))
@@ -155,15 +154,16 @@ def process_using_storeys(ifc_path, out_dir, color_fn=None, skip_colorless=False
         display.ExportToImage(path_to_export)
 
 
-def process(ifc_path, levels, out_dir, color_fn=None, skip_colorless=False):
-    ifc_file = ifcopenshell.open(ifc_path)
-    print("Loading products and shapes...")
-    products, shapes = get_products_and_shapes(ifc_file.by_type("IfcProduct"))
+def process(ifc_path, levels, out_dir, filter_fn, color_fn, skip_colorless=False):
+    model = ifcopenshell.open(ifc_path)
+    print("Loading elements and shapes...")
+    elements, shapes = get_elements_and_shapes(model, filter_fn)
+    print(len(elements))
     print("Done")
 
     print("Drawing shapes for 3D...")
     display.EraseAll()
-    draw_shapes(display, products, shapes, color_fn=color_fn, skip_colorless=skip_colorless)
+    draw_shapes(display, elements, shapes, color_fn=color_fn, skip_colorless=skip_colorless)
     print("Done")
 
     global_bbox = get_bounding_box(get_geometries(shapes))
@@ -173,18 +173,18 @@ def process(ifc_path, levels, out_dir, color_fn=None, skip_colorless=False):
         section_surface = get_section_surface(
             section_height, global_bbox[0], global_bbox[1], global_bbox[3], global_bbox[4]
         )
-        section_products = []
+        section_elements = []
         section_shapes = []
         section_faces = []
-        for product, shape in zip(products, shapes):
+        for element, shape in zip(elements, shapes):
             faces = get_section_faces(section_surface, shape)
             if len(faces) > 0:
-                section_products.append(product)
+                section_elements.append(element)
                 section_shapes.append(shape)
                 section_faces.append(faces)
 
         if len(section_shapes) > 0:
-            level_items.append((name, section_products, section_shapes, section_faces))
+            level_items.append((name, section_elements, section_shapes, section_faces))
 
             # now we can calculate a more strict bbox
             bbox = get_bounding_box(get_geometries(section_shapes))
@@ -219,11 +219,21 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("ifc")
     parser.add_argument("--use-storey", action="store_true")
-    parser.add_argument("--color-fn")
+    parser.add_argument("--load-plugin", action="store_true")
+    parser.add_argument("--filter-fn", default="default_filter")
+    parser.add_argument("--color-fn", default="all_black")
     parser.add_argument("--skip-colorless", action="store_true")
     parser.add_argument("--width", default=2048)
     parser.add_argument("--height", default=2048)
     args = parser.parse_args()
+
+    plugin = None
+    if args.load_plugin:
+        try:
+            plugin = import_module("plugin")
+        except ModuleNotFoundError as e:
+            print(f"Importing the plugin failed: {e}")
+            exit()
 
     display, start_display, add_menu, add_function_to_menu = init_display(
         size=(int(args.width), int(args.height)),
@@ -232,8 +242,17 @@ def main():
         background_gradient_color2=[255, 255, 255],
     )
 
-    color_fns = {"black": get_black_color_fn, "hash": get_hash_color_fn, "carbon": get_carbon_color_fn}
-    color_fn = color_fns.get(args.color_fn, lambda: None)()
+    if hasattr(plugin, args.filter_fn):
+        filter_fn = getattr(plugin, args.filter_fn)
+    else:
+        filter_fn = getattr(filters, args.filter_fn)
+    filter_fn = filter_fn()
+
+    if hasattr(plugin, args.color_fn):
+        color_fn = getattr(plugin, args.color_fn)
+    else:
+        color_fn = getattr(stylings, args.color_fn)
+    color_fn = color_fn()
 
     ifc_path = Path(args.ifc)
     project_root = ifc_path.parent.parent.parent
@@ -241,7 +260,7 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if args.use_storey:
-        process_using_storeys(ifc_path, out_dir, color_fn=color_fn, skip_colorless=args.skip_colorless)
+        process_using_storeys(ifc_path, out_dir, filter_fn, color_fn, skip_colorless=args.skip_colorless)
     else:
         floor_file = project_root / f"Tabular/Floors/{ifc_path.stem}.csv"
         if not floor_file.exists():
@@ -249,7 +268,7 @@ def main():
         columns = ["l", "e"]
         levels = pd.read_csv(floor_file, names=columns).to_dict("records")
         levels = [(l0["l"], (l0["e"] + l1["e"]) / 2000) for l0, l1 in zip(levels[:-1], levels[1:])]
-        process(ifc_path, levels, out_dir, color_fn=color_fn, skip_colorless=args.skip_colorless)
+        process(ifc_path, levels, out_dir, filter_fn, color_fn, skip_colorless=args.skip_colorless)
 
 
 # TODO Merge mark_floor plans and extract_floor_plans with Fire and name the combined program as BatchPlan
