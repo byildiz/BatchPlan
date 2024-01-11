@@ -15,7 +15,14 @@ from OCC.Extend.TopologyUtils import TopologyExplorer
 from tqdm import tqdm
 
 import fixes
-from utils import get_bounding_box, get_carbon_color_fn, get_geometries, get_hash_color_fn, get_products_and_shapes
+from utils import (
+    get_black_color_fn,
+    get_bounding_box,
+    get_carbon_color_fn,
+    get_geometries,
+    get_hash_color_fn,
+    get_products_and_shapes,
+)
 
 # os.environ["PYTHONOCC_OFFSCREEN_RENDERER"] = "1"
 
@@ -85,6 +92,7 @@ def get_section_faces(section_surface, shape):
 def process_using_storeys(ifc_path, out_dir, color_fn=None, skip_colorless=False):
     ifc_file = ifcopenshell.open(ifc_path)
     print("Loading products and shapes...")
+    # TODO implement filtering
     products, shapes = get_products_and_shapes(ifc_file.by_type("IfcProduct"))
     print("Done")
 
@@ -218,13 +226,13 @@ def main():
     args = parser.parse_args()
 
     display, start_display, add_menu, add_function_to_menu = init_display(
-        size=(args.width, args.height),
+        size=(int(args.width), int(args.height)),
         display_triedron=False,
-        background_gradient_color1=[0, 0, 0],
-        background_gradient_color2=[0, 0, 0],
+        background_gradient_color1=[255, 255, 255],
+        background_gradient_color2=[255, 255, 255],
     )
 
-    color_fns = {"hash": get_hash_color_fn, "carbon": get_carbon_color_fn}
+    color_fns = {"black": get_black_color_fn, "hash": get_hash_color_fn, "carbon": get_carbon_color_fn}
     color_fn = color_fns.get(args.color_fn, lambda: None)()
 
     ifc_path = Path(args.ifc)
@@ -244,5 +252,7 @@ def main():
         process(ifc_path, levels, out_dir, color_fn=color_fn, skip_colorless=args.skip_colorless)
 
 
+# TODO Merge mark_floor plans and extract_floor_plans with Fire and name the combined program as BatchPlan
+# TODO Make section extraction not only Z direction but also X and Y directions
 if __name__ == "__main__":
     main()

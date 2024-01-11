@@ -64,6 +64,13 @@ def get_reference(ref_str):
     return re.findall("\((.*)(\.|\:).*\)\+?", ref_str)[0][0]
 
 
+def get_black_color_fn():
+    def fn(product, shape):
+        return (0, 0, 0, 0), True
+
+    return fn
+
+
 def get_hash_color_fn():
     cmap = mcolors.CSS4_COLORS
     color_names = list(cmap)
