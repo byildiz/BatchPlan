@@ -6,15 +6,10 @@ from OCC.Core.Bnd import Bnd_Box
 from OCC.Core.BRepBndLib import brepbndlib
 from OCC.Core.BRepMesh import BRepMesh_IncrementalMesh
 
-from filters import default_filter
 
-
-def get_elements_and_shapes(model, filter_fn: None):
+def get_elements_and_shapes(model, filter_fn):
     settings = ifcopenshell.geom.settings()
     settings.set(settings.USE_PYTHON_OPENCASCADE, True)
-
-    if filter_fn is None:
-        filter_fn = default_filter
 
     elements = []
     shapes = []

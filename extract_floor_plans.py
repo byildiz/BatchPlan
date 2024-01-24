@@ -113,7 +113,7 @@ def process_using_storeys(ifc_path, out_dir, filter_fn, color_fn, skip_colorless
             section_height, global_bbox[0], global_bbox[1], global_bbox[3], global_bbox[4]
         )
         section_elements = get_decomposition(s0)
-        elements, shapes = get_elements_and_shapes(section_elements)
+        elements, shapes = get_elements_and_shapes(section_elements, context["filter_fn"])
         section_elements = []
         section_shapes = []
         section_faces = []
