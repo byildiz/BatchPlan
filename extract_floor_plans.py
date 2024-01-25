@@ -1,6 +1,7 @@
 import argparse
 from importlib import import_module
 from pathlib import Path
+import glob
 
 import ifcopenshell
 import ifcopenshell.geom
@@ -56,6 +57,7 @@ def process_using_storeys(context):
     print("Loading and filtering elements and shapes...")
     elements, shapes = get_elements_and_shapes(model.by_type("IfcElement"), context["filter_fn"])
     print("Done")
+    print("Total # elements:", len(elements))
 
     display = context["display"]
     print("Drawing shapes for 3D...")
@@ -109,8 +111,8 @@ def process(context):
     model = ifcopenshell.open(context["ifc_path"])
     print("Loading elements and shapes...")
     elements, shapes = get_elements_and_shapes(model, context["filter_fn"])
-    print(len(elements))
     print("Done")
+    print("Total # elements:", len(elements))
 
     display = context["display"]
     print("Drawing shapes for 3D...")
@@ -156,7 +158,7 @@ def process(context):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("ifc")
+    parser.add_argument("ifc_paths")
     parser.add_argument("--output", default="output")
     parser.add_argument("--use-storey", action="store_true")
     parser.add_argument("--load-plugin", action="store_true")
@@ -170,13 +172,6 @@ def main():
 
     context = {}
     context["args"] = args
-
-    ifc_path = Path(args.ifc)
-    project_root = ifc_path.parent.parent.parent
-    output_dir = Path(args.output)
-    output_dir.mkdir(parents=True, exist_ok=True)
-    context["ifc_path"] = ifc_path
-    context["output_dir"] = output_dir
 
     plugin = None
     if args.load_plugin:
@@ -214,17 +209,24 @@ def main():
             Formatter = getattr(formatters, name)
         context["formatters"].append(Formatter(context))
 
-    if args.use_storey:
-        process_using_storeys(context)
-    else:
-        floor_file = project_root / f"Tabular/Floors/{ifc_path.stem}.csv"
-        context["floor_file"] = floor_file
-        if not floor_file.exists():
-            raise ValueError(f"Floor file doesn't exist: {floor_file}")
-        columns = ["l", "e"]
-        levels = pd.read_csv(floor_file, names=columns).to_dict("records")
-        context["levels"] = [(l0["l"], (l0["e"] + l1["e"]) / 2000) for l0, l1 in zip(levels[:-1], levels[1:])]
-        process(context)
+    ifc_paths = glob.glob(args.ifc_paths)
+    for ifc_path in ifc_paths:
+        ifc_path = Path(ifc_path)
+        output_dir = Path(args.output) / ifc_path.stem
+        output_dir.mkdir(parents=True, exist_ok=True)
+        context["output_dir"] = output_dir
+        context["ifc_path"] = ifc_path
+        if args.use_storey:
+            process_using_storeys(context)
+        else:
+            level_file = ifc_path.parent / f"{ifc_path.stem}.csv"
+            context["level_file"] = level_file
+            if not level_file.exists():
+                raise ValueError(f"Level file doesn't exist: {level_file}")
+            columns = ["l", "e"]
+            levels = pd.read_csv(level_file, names=columns).to_dict("records")
+            context["levels"] = [(l0["l"], (l0["e"] + l1["e"]) / 2000) for l0, l1 in zip(levels[:-1], levels[1:])]
+            process(context)
 
 
 # TODO Merge mark_floor plans and extract_floor_plans with Fire and name the combined program as BatchPlan
