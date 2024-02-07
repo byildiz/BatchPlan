@@ -4,7 +4,7 @@ import fire
 import ifcopenshell
 import pandas as pd
 
-from utils import get_bounding_box, get_geometries, get_elements_and_shapes
+from utils import get_bounding_box, get_elements_and_shapes, get_geometries
 
 
 def calculate_global_bbox(input_path, output_path="global_bboxes.csv"):

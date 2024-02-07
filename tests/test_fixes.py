@@ -1,11 +1,10 @@
-import fixes
-
 import OCC
-from OCC.Core.gp import gp_Pnt
 from OCC.Core.BRepBuilderAPI import BRepBuilderAPI_MakeEdge, BRepBuilderAPI_MakeFace
+from OCC.Core.gp import gp_Pnt
 from OCC.Core.TopTools import TopTools_HSequenceOfShape
-
 from OCC.Display.SimpleGui import init_display
+
+import fixes
 
 display, start_display, add_menu, add_function_to_menu = init_display()
 

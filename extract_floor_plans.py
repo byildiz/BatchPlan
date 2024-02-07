@@ -1,7 +1,7 @@
 import argparse
+import glob
 from importlib import import_module
 from pathlib import Path
-import glob
 
 import ifcopenshell
 import ifcopenshell.geom
