@@ -1,6 +1,11 @@
 from abc import abstractmethod
 
+import pandas as pd
+from OCC.Core.BRep import BRep_Tool
+from OCC.Core.BRepTools import breptools
 from OCC.Display.OCCViewer import rgb_color
+from OCC.Extend.TopologyUtils import WireExplorer
+from shapely import MultiPolygon, Polygon, to_wkt
 
 # os.environ["PYTHONOCC_OFFSCREEN_RENDERER"] = "1"
 
@@ -83,3 +88,35 @@ class Floor3DFormatter(Formatter):
         self.display.FitAll()
         path_to_export = str(self.context["output_dir"] / f"{name}_3D.png")
         self.display.ExportToImage(path_to_export)
+
+
+# TODO Handle curves
+class FloorWKTFormatter(Formatter):
+    def __init__(self, context):
+        self.context = context
+
+    def process(self, name, elements, _, faces):
+        data = {"type": [], "name": [], "geometry": []}
+        for element, faces in zip(elements, faces):
+            data["type"].append(element.is_a())
+            data["name"].append(element.Name)
+            polygons = []
+            for face in faces:
+                wire = breptools.OuterWire(face)
+                we = WireExplorer(wire)
+                points = []
+                vertices = we.ordered_vertices()
+                for vertex in vertices:
+                    point = BRep_Tool.Pnt(vertex)
+                    points.append((point.X(), point.Y()))
+                if len(points) < 3:
+                    continue
+                polygon = Polygon(points)
+                polygons.append(polygon)
+            if len(polygons) == 0:
+                continue
+            wkt = to_wkt(MultiPolygon(polygons))
+            data["geometry"].append(wkt)
+        df = pd.DataFrame(data)
+        path_to_export = str(self.context["output_dir"] / f"{name}.csv")
+        df.to_csv(path_to_export, index=False)

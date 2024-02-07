@@ -5,14 +5,22 @@ channels:
 dependencies:
   - tqdm=4.65.0
   - ffmpeg=5.1.2
-  - numpy=1.25.2
-  - pandas=2.0.3
   - pyqt=5.15.9
   - fire=0.5.0
-  - matplotlib=3.8.2
   - pythonocc-core=7.7.2
   - python=3.11.4
   - pip=23.2.1
   - pip:
       - ifcopenshell==0.7.0.230818
       - lark==1.1.7
+      - matplotlib=3.8.2
+      - geopandas
+      - shapely
+      - pyproj
+      - fiona
+      - pyogrio
+      - rtree
+      - descartes
+      - pandas
+      - numpy
+      - pyarrow
