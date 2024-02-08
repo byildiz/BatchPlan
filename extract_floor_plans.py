@@ -55,7 +55,7 @@ def get_section_faces(section_surface, shape):
 def process_using_storeys(context):
     model = ifcopenshell.open(context["ifc_path"])
     print("Loading and filtering elements and shapes...")
-    elements, shapes = get_elements_and_shapes(model.by_type("IfcElement"), context["filter_fn"])
+    elements, shapes = get_elements_and_shapes(model, filter_fn=context.get("filter_fn"))
     print("Done")
     print("Total # elements:", len(elements))
 
@@ -71,6 +71,7 @@ def process_using_storeys(context):
     storeys = list(model.by_type("IfcBuildingStorey"))
     for s0, s1 in zip(storeys[:-1], storeys[1:]):
         name = s0.Name
+        # find the middle of two storeys in meters
         section_height = (s0.Elevation + s1.Elevation) / 2000
         print(f"Storey: {name}")
 
@@ -78,7 +79,7 @@ def process_using_storeys(context):
             section_height, global_bbox[0], global_bbox[1], global_bbox[3], global_bbox[4]
         )
         section_elements = get_decomposition(s0)
-        elements, shapes = get_elements_and_shapes(section_elements, context["filter_fn"])
+        elements, shapes = get_elements_and_shapes(section_elements, filter_fn=context.get("filter_fn"))
         section_elements = []
         section_shapes = []
         section_faces = []
@@ -110,7 +111,7 @@ def process_using_storeys(context):
 def process(context):
     model = ifcopenshell.open(context["ifc_path"])
     print("Loading elements and shapes...")
-    elements, shapes = get_elements_and_shapes(model, context["filter_fn"])
+    elements, shapes = get_elements_and_shapes(model, filter_fn=context.get("filter_fn"), filter=context.get("filter"))
     print("Done")
     print("Total # elements:", len(elements))
 
@@ -164,6 +165,7 @@ def main():
     parser.add_argument("--load-plugin", action="store_true")
     parser.add_argument("--formatter", action="append", default=["FloorPlanFormatter", "Floor3DFormatter"])
     parser.add_argument("--filter-fn", default="default_filter")
+    parser.add_argument("--filter")
     parser.add_argument("--color-fn", default="all_black")
     parser.add_argument("--skip-colorless", action="store_true")
     parser.add_argument("--width", default=2048)
@@ -189,11 +191,16 @@ def main():
     )[0]
     context["display"] = display
 
+    filter_fn = None
     if hasattr(plugin, args.filter_fn):
         filter_fn = getattr(plugin, args.filter_fn)
-    else:
+    elif hasattr(filters, args.filter_fn):
         filter_fn = getattr(filters, args.filter_fn)
     context["filter_fn"] = filter_fn()
+
+    if args.use_storey and args.filter is not None:
+        print("Warning: filter and use_storey options don't work together as expected.")
+    context["filter"] = args.filter
 
     if hasattr(plugin, args.color_fn):
         color_fn = getattr(plugin, args.color_fn)
@@ -210,6 +217,8 @@ def main():
         context["formatters"].append(Formatter(context))
 
     ifc_paths = glob.glob(args.ifc_paths)
+    if len(ifc_paths) == 0:
+        print("No IFC file found!")
     for ifc_path in ifc_paths:
         ifc_path = Path(ifc_path)
         output_dir = Path(args.output) / ifc_path.stem

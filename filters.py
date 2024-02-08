@@ -3,7 +3,8 @@ def in_list(ls, el):
 
 
 def default_filter():
-    ls = ("IfcSite", "IfcSpace", "IfcOpeningElement")
+    # ls = ("IfcSite", "IfcSpace", "IfcOpeningElement")
+    ls = tuple()
 
     def fn(el):
         return el.is_a("IfcProduct") and (el.Representation is not None) and (not in_list(ls, el))

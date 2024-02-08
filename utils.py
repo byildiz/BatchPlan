@@ -2,26 +2,44 @@ import re
 
 import ifcopenshell
 import ifcopenshell.geom
+from ifcopenshell.util.selector import filter_elements
 from OCC.Core.Bnd import Bnd_Box
 from OCC.Core.BRepBndLib import brepbndlib
 from OCC.Core.BRepMesh import BRepMesh_IncrementalMesh
 
 
-def get_elements_and_shapes(model, filter_fn):
+def get_elements_and_shapes(model, filter_fn=None, filter=None):
     settings = ifcopenshell.geom.settings()
     settings.set(settings.USE_PYTHON_OPENCASCADE, True)
 
-    elements = []
-    shapes = []
-    for el in model:
-        if not filter_fn(el):
-            continue
+    rest = model
+    if filter is not None and not isinstance(model, list):
+        rest = filter_elements(model, filter)
+
+    def cs(el):
         try:
             shape = ifcopenshell.geom.create_shape(settings, el)
-            elements.append(el)
-            shapes.append(shape)
+            return shape
         except RuntimeError as e:
-            print(f"Exception: name={el.Name}, exception={e}")
+            print(f"Shape could not created for: type={el.is_a()}, name={el.Name}, exception={e}")
+            return None
+
+    elements = []
+    shapes = []
+    if filter_fn is not None:
+        for el in rest:
+            if not filter_fn(el):
+                continue
+            shape = cs(el)
+            if shape is not None:
+                elements.append(el)
+                shapes.append(shape)
+    else:
+        for el in rest:
+            shape = cs(el)
+            if shape is not None:
+                elements.append(el)
+                shapes.append(shape)
     return elements, shapes
 
 
