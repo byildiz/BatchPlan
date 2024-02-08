@@ -98,8 +98,6 @@ class FloorWKTFormatter(Formatter):
     def process(self, name, elements, _, faces):
         data = {"type": [], "name": [], "geometry": []}
         for element, faces in zip(elements, faces):
-            data["type"].append(element.is_a())
-            data["name"].append(element.Name)
             polygons = []
             for face in faces:
                 wire = breptools.OuterWire(face)
@@ -114,8 +112,11 @@ class FloorWKTFormatter(Formatter):
                 polygon = Polygon(points)
                 polygons.append(polygon)
             if len(polygons) == 0:
+                print(f"No polygon created for: type={element.is_a()}, name={element.Name}")
                 continue
             wkt = to_wkt(MultiPolygon(polygons))
+            data["type"].append(element.is_a())
+            data["name"].append(element.Name)
             data["geometry"].append(wkt)
         df = pd.DataFrame(data)
         path_to_export = str(self.context["output_dir"] / f"{name}.csv")
