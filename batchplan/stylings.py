@@ -1,7 +1,7 @@
 import matplotlib.colors as mcolors
 import pandas as pd
 
-from utils import get_name
+from .utils import get_name
 
 
 def all_black():

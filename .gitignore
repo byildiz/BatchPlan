@@ -161,10 +161,9 @@ cython_debug/
 
 # my entries
 .DS_Store
-data
-data-clean
+/data
+/data-clean
 build
 scratch_pad.ipynb
-fixes.py
-_Fixes.so
+batchplan/_Fixes.so
 output

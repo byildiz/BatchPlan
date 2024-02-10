@@ -10,7 +10,7 @@ from OCC.Display.OCCViewer import rgb_color
 from OCC.Display.SimpleGui import init_display
 from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow
 
-from utils import get_bounding_box
+from .utils import get_bounding_box
 
 display = None
 main_window = None

@@ -15,12 +15,9 @@ from OCC.Display.SimpleGui import init_display
 from OCC.Extend.TopologyUtils import TopologyExplorer
 from tqdm import tqdm
 
-import filters
-import fixes
-import formatters
-import stylings
-from formatters import draw_shapes
-from utils import (
+from . import filters, fixes, formatters, stylings
+from .formatters import draw_shapes
+from .utils import (
     get_bounding_box,
     get_elements_and_shapes,
     get_geometries,

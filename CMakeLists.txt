@@ -20,12 +20,12 @@ include(${SWIG_USE_FILE})
 message(STATUS ${SWIG_VERSION})
 message(STATUS ${SWIG_EXECUTABLE})
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/swig)
 
-set_source_files_properties(src/Fixes.i PROPERTIES CPLUSPLUS ON)
-swig_add_library(Fixes LANGUAGE python SOURCES src/Fixes.i src/Fixes.cxx)
+set_source_files_properties(swig/Fixes.i PROPERTIES CPLUSPLUS ON)
+swig_add_library(Fixes LANGUAGE python SOURCES swig/Fixes.i swig/Fixes.cxx)
 target_link_libraries(Fixes ${Python3_LIBRARIES} ${OpenCASCADE_FoundationClasses_LIBRARIES} ${OpenCASCADE_ModelingData_LIBRARIES} ${OpenCASCADE_ModelingAlgorithms_LIBRARIES})
 
 if(APPLE)
-	set_property(TARGET Fixes APPEND PROPERTY LINK_FLAGS "-flat_namespace -undefined suppress")
+	set_property(TARGET Fixes APPEND PROPERTY LINK_FLAGS "-flat_namespace")
 endif()

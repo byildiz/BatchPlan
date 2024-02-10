@@ -3,7 +3,6 @@ from pathlib import Path
 import fire
 import ifcopenshell
 import pandas as pd
-
 from utils import get_bounding_box, get_elements_and_shapes, get_geometries
 
 
