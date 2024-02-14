@@ -166,4 +166,5 @@ cython_debug/
 build
 scratch_pad.ipynb
 batchplan/_Fixes.so
+batchplan/fixes.py
 output
