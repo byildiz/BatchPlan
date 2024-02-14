@@ -27,5 +27,17 @@ swig_add_library(Fixes LANGUAGE python SOURCES src/Fixes.i src/Fixes.cxx)
 target_link_libraries(Fixes ${Python3_LIBRARIES} ${OpenCASCADE_FoundationClasses_LIBRARIES} ${OpenCASCADE_ModelingData_LIBRARIES} ${OpenCASCADE_ModelingAlgorithms_LIBRARIES})
 
 if(APPLE)
-	set_property(TARGET Fixes APPEND PROPERTY LINK_FLAGS "-flat_namespace -undefined suppress")
+	set_property(TARGET Fixes APPEND PROPERTY LINK_FLAGS "-flat_namespace")
 endif()
+
+if(CALL_FROM_SETUP_PY)
+	set(SWIG_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX})
+else()
+	set(SWIG_INSTALL_PREFIX ${Python3_SITELIB})
+endif()
+
+get_property(WRAPPER_PY_FILE TARGET Fixes PROPERTY SWIG_SUPPORT_FILES)
+
+install(FILES ${WRAPPER_PY_FILE} DESTINATION ${SWIG_INSTALL_PREFIX} COMPONENT bindings)
+
+install(TARGETS Fixes COMPONENT bindings LIBRARY DESTINATION ${SWIG_INSTALL_PREFIX} ARCHIVE DESTINATION ${SWIG_INSTALL_PREFIX} RUNTIME DESTINATION ${SWIG_INSTALL_PREFIX})

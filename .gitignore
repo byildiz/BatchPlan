@@ -165,6 +165,6 @@ data
 data-clean
 build
 scratch_pad.ipynb
-fixes.py
-_Fixes.so
+batchplan/_Fixes.so
+batchplan/fixes.py
 output
