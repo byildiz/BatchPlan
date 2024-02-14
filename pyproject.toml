@@ -10,6 +10,9 @@ description = "BatchPlan: A large scale solution for floor plan extraction"
 [tool.setuptools]
 packages = ["batchplan"]
 
+[tool.cibuildwheel]
+build = "cp310-* cp311-* cp312-*"
+
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
 exclude = [
