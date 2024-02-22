@@ -49,11 +49,10 @@ jobs:
           tar -zxf occt-7.7.2.tar.gz
           cd occt-cec1ecd
           mkdir -p build
-          cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -GNinja
+          cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -DBUILD_MODULE_ApplicationFramew=OFF -DBUILD_MODULE_DETools=OFF -DBUILD_MODULE_DataExchange=OFF -DBUILD_MODULE_Draw=OFF -DBUILD_MODULE_Visualization=OFF -GNinja
           cmake --build build
           sudo cmake --install build
-          echo "/opt/build/occt772/lib" | sudo tee -a /etc/ld.so.conf.d/occt.conf
-          sudo ldconfig
+          export CMAKE_PREFIX_PATH="/opt/build/occt772/lib/cmake/opencascade:$CMAKE_PREFIX_PATH"
 
       - name: Build wheels
         uses: pypa/cibuildwheel@ce3fb7832089eb3e723a0a99cab7f3eaccf074fd # v2.16.5
