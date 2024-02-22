@@ -26,6 +26,7 @@ setuptools.setup(
                 f"-DPython3_ROOT_DIR={Path(sys.prefix)}",
                 "-DCALL_FROM_SETUP_PY:BOOL=ON",
                 "-DBUILD_SHARED_LIBS:BOOL=OFF",
+                "-DOpenCASCADE_DIR=/opt/build/occt772/lib/cmake/opencascade",
             ],
         ),
     ],
