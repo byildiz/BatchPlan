@@ -49,9 +49,9 @@ jobs:
       - name: Cache OCCT [Ubuntu]
         if: startsWith(matrix.buildplat[0], 'ubuntu')
         id: cache-occt
-        uses: actions/cache@v3
+        uses: actions/cache/restore@v3
         with:
-          key: occt-cec1ecd
+          key: occt-cec1ecd-${{ matrix.buildplat[1] }}
           path: /opt/build/occt772
 
       - name: Install OCCT [Ubuntu]
@@ -65,6 +65,13 @@ jobs:
           cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -DBUILD_MODULE_ApplicationFramew=OFF -DBUILD_MODULE_DETools=OFF -DBUILD_MODULE_DataExchange=OFF -DBUILD_MODULE_Draw=OFF -DBUILD_MODULE_Visualization=OFF -GNinja
           cmake --build build
           sudo cmake --install build
+
+      - name: Cache OCCT [Ubuntu]
+        if: startsWith(matrix.buildplat[0], 'ubuntu')
+        uses: actions/cache/save@v3
+        with:
+          key: occt-cec1ecd-${{ matrix.buildplat[1] }}
+          path: /opt/build/occt772
 
       - name: Build wheels
         uses: pypa/cibuildwheel@ce3fb7832089eb3e723a0a99cab7f3eaccf074fd # v2.16.5
