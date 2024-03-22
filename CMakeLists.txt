@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(Fixes)
 
-find_package(Python3 COMPONENTS Development Interpreter)
+find_package(Python3 REQUIRED COMPONENTS Development.Module Interpreter)
 include_directories(${Python3_INCLUDE_DIRS})
 message(STATUS ${Python3_VERSION})
 message(STATUS ${Python3_INCLUDE_DIRS})
@@ -10,6 +10,7 @@ message(STATUS ${Python3_LIBRARIES})
 
 find_package(OpenCASCADE 7.7.2 REQUIRED)
 include_directories(${OpenCASCADE_INCLUDE_DIR})
+message(STATUS ${OpenCASCADE_INCLUDE_DIR})
 message(STATUS ${OpenCASCADE_LIBRARIES})
 message(STATUS ${OpenCASCADE_FoundationClasses_LIBRARIES})
 message(STATUS ${OpenCASCADE_ModelingData_LIBRARIES})

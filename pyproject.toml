@@ -17,7 +17,11 @@ Issues = "https://github.com/byildiz/BatchPlan/issues"
 packages = ["batchplan"]
 
 [tool.cibuildwheel]
-build = "cp310-*"
+# manylinux-x86_64-image = "manylinux_2_28"
+
+[tool.cibuildwheel.linux]
+environment = { LD_LIBRARY_PATH = "/host/opt/build/occt772/lib" }
+repair-wheel-command = ""
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
