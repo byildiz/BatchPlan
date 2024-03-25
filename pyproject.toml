@@ -17,11 +17,20 @@ Issues = "https://github.com/byildiz/BatchPlan/issues"
 packages = ["batchplan"]
 
 [tool.cibuildwheel]
-# manylinux-x86_64-image = "manylinux_2_28"
+# manylinux-x86_64-image = "manylinux_2_24"
 
 [tool.cibuildwheel.linux]
-environment = { LD_LIBRARY_PATH = "/host/opt/build/occt772/lib" }
-repair-wheel-command = ""
+environment = { LD_LIBRARY_PATH = "/opt/build/occt772/lib" }
+before-build = [
+    "yum install -y gcc gcc-c++ make swig ninja-build wget cmake git mesa-libGLU-devel mesa-libGL-devel libXmu-devel libXi-devel freetype-devel tk-devel rapidjson-devel pcre2-devel",
+    "wget -q -O occt-7.7.2.tar.gz \"https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=cec1ecd0c9f3b3d2572c47035d11949e8dfa85e2;sf=tgz\"",
+    "tar -zxf occt-7.7.2.tar.gz",
+    "cd occt-cec1ecd",
+    "mkdir -p build",
+    "cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -DBUILD_MODULE_ApplicationFramew=OFF -DBUILD_MODULE_DETools=OFF -DBUILD_MODULE_DataExchange=OFF -DBUILD_MODULE_Draw=OFF -DBUILD_MODULE_Visualization=OFF -GNinja",
+    "cmake --build build",
+    "cmake --install build",
+]
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.

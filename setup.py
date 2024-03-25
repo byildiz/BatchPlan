@@ -27,7 +27,7 @@ setuptools.setup(
                 f"-DPython3_ROOT_DIR={Path(sys.prefix)}",
                 "-DCALL_FROM_SETUP_PY:BOOL=ON",
                 "-DBUILD_SHARED_LIBS:BOOL=OFF",
-                "-DCMAKE_PREFIX_PATH=/host/opt/build/occt772",
+                "-DCMAKE_PREFIX_PATH=/opt/build/occt772",
             ],
         ),
     ],

@@ -40,46 +40,43 @@ jobs:
         run: |
           brew install swig opencascade
 
-      - name: Install dependencies [Ubuntu]
-        if: startsWith(matrix.buildplat[0], 'ubuntu')
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential swig ninja-build wget cmake libglu1-mesa-dev libgl1-mesa-dev libxmu-dev libxi-dev libfreetype6-dev tk-dev rapidjson-dev git libpcre2-dev
+      # - name: Install dependencies [Ubuntu]
+      #   if: startsWith(matrix.buildplat[0], 'ubuntu')
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y build-essential swig ninja-build wget cmake libglu1-mesa-dev libgl1-mesa-dev libxmu-dev libxi-dev libfreetype6-dev tk-dev rapidjson-dev git libpcre2-dev
 
-      - name: Cache OCCT [Ubuntu]
-        if: startsWith(matrix.buildplat[0], 'ubuntu')
-        id: cache-occt
-        uses: actions/cache/restore@v3
-        with:
-          key: occt-cec1ecd-${{ matrix.buildplat[1] }}
-          path: /opt/build/occt772
+      # - name: Install OCCT [Ubuntu]
+      #   if: startsWith(matrix.buildplat[0], 'ubuntu') && steps.cache-occt.outputs.cache-hit != 'true'
+      #   continue-on-error: true
+      #   run: |
+      #     wget -q -O occt-7.7.2.tar.gz "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=cec1ecd0c9f3b3d2572c47035d11949e8dfa85e2;sf=tgz"
+      #     tar -zxf occt-7.7.2.tar.gz
+      #     cd occt-cec1ecd
+      #     mkdir -p build
+      #     cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -DBUILD_MODULE_ApplicationFramew=OFF -DBUILD_MODULE_DETools=OFF -DBUILD_MODULE_DataExchange=OFF -DBUILD_MODULE_Draw=OFF -DBUILD_MODULE_Visualization=OFF -GNinja
+      #     cmake --build build
+      #     cmake --install build
 
-      - name: Install OCCT [Ubuntu]
-        if: startsWith(matrix.buildplat[0], 'ubuntu') && steps.cache-occt.outputs.cache-hit != 'true'
-        continue-on-error: true
-        run: |
-          wget -q -O occt-7.7.2.tar.gz "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=cec1ecd0c9f3b3d2572c47035d11949e8dfa85e2;sf=tgz"
-          tar -zxf occt-7.7.2.tar.gz
-          cd occt-cec1ecd
-          mkdir -p build
-          cmake -S . -B build -DINSTALL_DIR=/opt/build/occt772 -DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF -DBUILD_MODULE_ApplicationFramew=OFF -DBUILD_MODULE_DETools=OFF -DBUILD_MODULE_DataExchange=OFF -DBUILD_MODULE_Draw=OFF -DBUILD_MODULE_Visualization=OFF -GNinja
-          cmake --build build
-          cmake --install build
-
-      - run: |
-          ls /opt/build/occt772
-
-      - name: Cache OCCT [Ubuntu]
-        if: startsWith(matrix.buildplat[0], 'ubuntu') && steps.cache-occt.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v3
-        with:
-          key: occt-cec1ecd-${{ matrix.buildplat[1] }}
-          path: /opt/build/occt772
+      # - name: Cache OCCT [Ubuntu]
+      #   if: startsWith(matrix.buildplat[0], 'ubuntu')
+      #   id: cache-occt
+      #   uses: actions/cache/restore@v4
+      #   with:
+      #     key: occt-cec1ecd-${{ matrix.buildplat[1] }}
+      #     path: /opt/build/occt772
 
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.17.0
         env:
           CIBW_BUILD: ${{ matrix.python }}-${{ matrix.buildplat[1] }}
+
+      # - name: Cache OCCT [Ubuntu]
+      #   if: startsWith(matrix.buildplat[0], 'ubuntu') && steps.cache-occt.outputs.cache-hit != 'true'
+      #   uses: actions/cache/save@v4
+      #   with:
+      #     key: occt-cec1ecd-${{ matrix.buildplat[1] }}
+      #     path: /opt/build/occt772
 
       - uses: actions/upload-artifact@v4.3.1
         with:
