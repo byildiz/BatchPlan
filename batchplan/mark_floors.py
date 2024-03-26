@@ -64,7 +64,8 @@ def main():
     args = parser.parse_args()
 
     root_path = Path(args.root)
-    ifc_files = list(root_path.glob("*/3D/IFC/*.ifc"))
+    ifc_files = list(root_path.glob("*.ifc"))
+    print(ifc_files)
     selected_ifc_file = None
 
     display, start_display, add_menu, add_function_to_menu = init_display(size=(1024, 768))
@@ -102,9 +103,7 @@ def main():
             update_text()
 
     def save():
-        out_dir = selected_ifc_file.parent.parent.parent / "Tabular/Floors"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out_file = out_dir / f"{selected_ifc_file.stem}.csv"
+        out_file = root_path / f"{selected_ifc_file.stem}.csv"
         with out_file.open("w", newline="") as f:
             writer = csv.writer(f)
             writer.writerows(floors)
