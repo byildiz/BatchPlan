@@ -16,9 +16,6 @@ dependencies = ["ifcopenshell", "pandas", "shapely", "matplotlib", "lark"]
 Homepage = "https://github.com/byildiz/BatchPlan"
 Issues = "https://github.com/byildiz/BatchPlan/issues"
 
-[tool.setuptools]
-packages = ["batchplan"]
-
 [tool.cibuildwheel]
 # manylinux-x86_64-image = "manylinux_2_24"
 
