@@ -8,7 +8,7 @@ dependencies:
   - pyqt=5.15.9
   - fire=0.5.0
   - pythonocc-core=7.7.2
-  - python=3.11.4
+  - python=3.10
   - pip=23.2.1
   - pip:
       - ifcopenshell==0.7.0.230818
