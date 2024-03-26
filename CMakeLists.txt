@@ -2,7 +2,12 @@ cmake_minimum_required(VERSION 3.20)
 
 project(Fixes)
 
-find_package(Python3 REQUIRED COMPONENTS Development.Module Interpreter)
+if(APPLE)
+	find_package(Python3 REQUIRED COMPONENTS Development Interpreter)
+else()
+	find_package(Python3 REQUIRED COMPONENTS Development.Module Interpreter)
+endif()
+
 include_directories(${Python3_INCLUDE_DIRS})
 message(STATUS ${Python3_VERSION})
 message(STATUS ${Python3_INCLUDE_DIRS})
