@@ -100,7 +100,7 @@ def process_using_storeys(context):
     path_to_export = str(context["output_dir"] / "3D.png")
     display.ExportToImage(path_to_export)
 
-    for name, se, ss, sf in tqdm(level_items, desc="Levels", total=len(level_items)):
+    for name, se, ss, sf in tqdm(level_items, desc="Running formatters", total=len(level_items)):
         for formatter in context["formatters"]:
             formatter.process(name, se, ss, sf)
 
@@ -217,6 +217,7 @@ def main():
     if len(ifc_paths) == 0:
         print("No IFC file found!")
     for ifc_path in ifc_paths:
+        print(f"Processing: {ifc_path}")
         ifc_path = Path(ifc_path)
         output_dir = Path(args.output) / ifc_path.stem
         output_dir.mkdir(parents=True, exist_ok=True)
