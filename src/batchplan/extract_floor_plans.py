@@ -205,6 +205,10 @@ def main():
         color_fn = getattr(stylings, args.color_fn)
     context["color_fn"] = color_fn()
 
+    if len(args.formatter) == 0:
+        selected_formatters = ["FloorPlanFormatter", "Floor3DFormatter"]
+    else:
+        selected_formatters = args.formatter
     context["formatters"] = []
     for name in args.formatter:
         if hasattr(plugin, name):
