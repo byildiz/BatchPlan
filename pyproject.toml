@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "BatchPlan"
-version = "0.1.1"
+version = "0.1.2"
 authors = [{ name = "Burak Yildiz", email = "0byldz@gmail.com" }]
 description = "BatchPlan: A large scale solution for floor plan extraction"
 readme = "README.md"
