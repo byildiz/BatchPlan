@@ -157,16 +157,24 @@ def process(context):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("ifc_paths")
-    parser.add_argument("--output", default="output")
-    parser.add_argument("--use-storey", action="store_true")
-    parser.add_argument("--load-plugin", action="store_true")
-    parser.add_argument("--formatter", action="append", default=["FloorPlanFormatter", "Floor3DFormatter"])
-    parser.add_argument("--filter-fn", default="default_filter")
-    parser.add_argument("--filter")
-    parser.add_argument("--color-fn", default="all_black")
-    parser.add_argument("--skip-colorless", action="store_true")
-    parser.add_argument("--width", default=2048)
-    parser.add_argument("--height", default=2048)
+    parser.add_argument("--output", default="output", help="output directory")
+    parser.add_argument("--use-storey", action="store_true", help="use IfcBuildingStorey elements to infer floors")
+    parser.add_argument("--load-plugin", action="store_true", help="load plugin module (plugin.py)")
+    parser.add_argument("--formatter", action="append", default=[], help="selected formatters")
+    parser.add_argument("--filter-fn", default="default_filter", help="filter function for filter out elements")
+    parser.add_argument(
+        "--filter", help="filter string to filter aout elements using IfcOpenShell's builtin filtering feature"
+    )
+    parser.add_argument(
+        "--color-fn", default="all_black", help="color function to determine elements' colors in floor plan"
+    )
+    parser.add_argument(
+        "--skip-colorless",
+        action="store_true",
+        help="skip elements if the color function doesn't return a color for an element",
+    )
+    parser.add_argument("--width", default=2048, help="floor plan width")
+    parser.add_argument("--height", default=2048, help="floor plan height")
     args = parser.parse_args()
 
     context = {}
@@ -210,7 +218,7 @@ def main():
     else:
         selected_formatters = args.formatter
     context["formatters"] = []
-    for name in args.formatter:
+    for name in selected_formatters:
         if hasattr(plugin, name):
             Formatter = getattr(plugin, name)
         else:

@@ -60,7 +60,7 @@ def main():
     global display, main_window
     parser = argparse.ArgumentParser()
     parser.add_argument("root")
-    parser.add_argument("--use-storeys", action="store_true")
+    parser.add_argument("--use-storeys", action="store_true", help="pre-fill floors using IfcBuildingStorey elements")
     args = parser.parse_args()
 
     root_path = Path(args.root)
