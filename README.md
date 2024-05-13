@@ -1,5 +1,7 @@
 # BatchPlan
 
+![architecture](.assets/architecture.jpg)
+
 ## About
 
 BatchPlan as a robust large-scale floor plan extraction tool designed to be highly customizable, extensible, and pluggable in various capacities. The design decisions are meticulously crafted, particularly for the processing of extensive BIM data stored in IFC files.
@@ -128,7 +130,7 @@ python -m batchplan.mark_floors --use-storeys examples/data/Shependomlaan
 
 If you run the above command, you will see a GUI like the one below:
 
-![mark_floors](examples/screenshots/mark_floors.png)
+![mark_floors](.assets/mark_floors.png)
 
 ## Known Issues and Limitations
 
